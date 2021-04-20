@@ -17,4 +17,5 @@ Route::get('/fda', function () {
     return view('registrar.registrarRecetas');
 });
 Route::get('/','homeController@index');
-Route::get('/Registrar','recetaController@registrar');
+Route::get('Registrar','recetaController@index');
+Route::post('Registrar','recetaController@registrar');
