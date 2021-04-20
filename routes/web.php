@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('vista');
+Route::get('/fda', function () {
+    return view('registrar.registrarRecetas');
 });
+Route::get('/','homeController@index');
+Route::get('/Registrar','recetaController@registrar');
