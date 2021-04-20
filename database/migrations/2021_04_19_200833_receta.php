@@ -20,6 +20,7 @@ class Receta extends Migration
             $table->longText('ingredientes');
             $table->longText('ingredientes_alternativos');
             $table->longText('pasos');
+            $table->string('ruta_imagen');
             $table->softDeletes();
             $table->timestamps();
         });

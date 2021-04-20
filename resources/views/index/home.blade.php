@@ -46,10 +46,9 @@
         @foreach($recetas as $receta)
           <div class="col">
             <div class="card h-100">
-            <a href=""><img src="..." class="card-img-top" alt="Imagen de Receta"></a>
+            <a href=""><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
               <div class="card-body">
                 <h5 class="card-title">{{$receta->nombre}}</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
