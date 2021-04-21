@@ -41,7 +41,7 @@
 
       <main class="bg-light">
 
-        <div class="container-md container-inline bg-success w-50 border border-dark"><br>
+        <div class="container-md container-inline bg-success w-50 border border-dark" id="Layer1" style="height:450px; overflow: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach($recetas as $receta)
           <div class="col">
@@ -54,7 +54,7 @@
           </div>
         @endforeach
         </div> <br>         
-        </div>
+        </div><br>
       </main>
 
 
