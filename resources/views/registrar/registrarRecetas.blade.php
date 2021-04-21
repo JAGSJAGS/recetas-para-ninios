@@ -7,44 +7,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     
     <title>Recetas Para Niños</title>
+
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;  
+}
+.main{
+    background-color: #EAFDEA;
+}
+#layer1{
+    background-color: #EAFDEA;
+}
+#header{ 
+    
+    width: 1000px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style: none;
+
+}
+
+.nav li a {
+    background-color: #198754;
+    color:#fff;
+    text-decoration:none;
+    padding: 10px 15px;
+    display:block;
+}
+
+.nav > li{
+   float:left;
+   
+}
+.nav li a:hover{
+   background-color:#154830;
+
+}
+
+.nav li ul {
+     display: none;
+     position: absolute;
+     min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+    
+} 
+    </style>
+    
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menú
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+          <a class="navbar-brand" href="/">INICIO</a> 
+            <ul class ="nav">
+               <li><a href="#">Menú-></a>            
+                   <ul>
+                       <li><a href="/">Inicio</a> </li>
+                       <li><a href="Registrar">Registrar receta</a> </li>                      
+                  </ul> 
+               </li>  
             </ul>
-          </div>
         </div>
 
         </div>
       </nav>
+
+
+      <main class="main">        
       <br>
-      <div class="container w-25 center"><h2>Registrar Recetas</h2></div>
+      <div class="container w-25 center"><h2>Registrar Recetas</h2></div><br>
 
-      <main class="">
-
-        <div class="container-md container-inline bg-light w-50 border">
+        <div class="container-md container-inline bg-light w-50 border border-success">
 
           <br><br>
-          <form class="container w-75" method="POST" action="Registrar" enctype="multipart/form-data">
+          <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
             @csrf
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre:</label>
@@ -82,8 +125,8 @@
             <div class="container center w-25"><button type="submit" class="btn btn-primary ">Registrar</button></div>
             
           </form><br>
-
-      </main><br><br>
+        </div><br><br>
+      </main>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

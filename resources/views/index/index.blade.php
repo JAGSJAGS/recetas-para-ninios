@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    
     <title>Recetas Para Niños</title>
+
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;  
+}
+.main{
+    background-color: #EAFDEA;
+}
+#layer1{
+    background-color: #EAFDEA;
+}
+#header{ 
+    
+    width: 1000px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style: none;
+
+}
+
+.nav li a {
+    background-color: #198754;
+    color:#fff;
+    text-decoration:none;
+    padding: 10px 15px;
+    display:block;
+}
+
+.nav > li{
+   float:left;
+   
+}
+.nav li a:hover{
+   background-color:#154830;
+
+}
+
+.nav li ul {
+     display: none;
+     position: absolute;
+     min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+    
+} 
+    </style>
 </head>
 <body>
 
@@ -14,38 +63,29 @@
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="Registrar">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menú
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+          <a class="navbar-brand" href="/">INICIO</a> 
+            <ul class ="nav">
+               <li><a href="#">Menú</a>             
+                   <ul>
+                       <li><a href="/">Inicio</a> </li>
+                       <li><a href="Registrar">Registrar receta</a> </li>                      
+                  </ul> 
+               </li>  
             </ul>
-          </div>
         </div>
 
         </div>
       </nav>
-      <br>
-      <div class="container w-50 center bg-ligth"><h1>Recetas Saludables Para Niños</h1></div>
+      
+      <main class="main">
+        <br>
+        <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
 
-      <main class="bg-light">
-
-        <div class="container-md container-inline bg-success w-50 border border-dark" id="Layer1" style="height:450px; overflow: scroll;"><br>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="container-md container-inline w-75 " id="layer1" style="height:450px; overflow: scroll;"><br>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
         @foreach($recetas as $receta)
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 border border-dark">
             <a href=""><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
               <div class="card-body">
                 <h5 class="card-title">{{$receta->nombre}}</h5>
