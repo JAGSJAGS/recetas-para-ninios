@@ -14,7 +14,7 @@
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/Registrar">INICIO</a>
+          <a class="navbar-brand" href="Registrar">INICIO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,21 +41,20 @@
 
       <main class="bg-light">
 
-        <div class="container-md container-inline bg-success w-50 border border-dark"><br>
+        <div class="container-md container-inline bg-success w-50 border border-dark" id="Layer1" style="height:450px; overflow: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach($recetas as $receta)
           <div class="col">
             <div class="card h-100">
-            <a href=""><img src="..." class="card-img-top" alt="..."></a>
+            <a href=""><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
               <div class="card-body">
                 <h5 class="card-title">{{$receta->nombre}}</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
         @endforeach
         </div> <br>         
-        </div>
+        </div><br>
       </main>
 
 

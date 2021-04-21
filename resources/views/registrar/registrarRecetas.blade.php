@@ -44,34 +44,38 @@
         <div class="container-md container-inline bg-light w-50 border">
 
           <br><br>
-          <form class="container w-75">
+          <form class="container w-75" method="POST" action="Registrar" enctype="multipart/form-data">
+            @csrf
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre:</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" rows="3">
+                <input class="form-control" name="Nombre" rows="3">
               </div>
-            </div>
-            <div class="container center bg-danger w-50">              
-                <img src="..." class="card-img-top" alt="...">
-            </div><br>
+            </div><br><br>
+            
+            <div class="mb-4">
+              <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
+              <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file">
+            </div><br><br>
+
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes:</label>
               <div class="col-sm-1"></div>
               <div class="col-sm-9">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                <textarea class="form-control" name="Ingredientes" rows="4"></textarea>
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes Alternativos:</label>
               <div class="col-sm-1"></div>
               <div class="col-sm-9">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                <textarea class="form-control" name="IngredientesAlternativos" rows="4"></textarea>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Pasos:</label>
-              <div class="col-sm-10">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+              <label for="inputPassword3" class="col-sm-3 col-form-label">Pasos:</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" name="Pasos" rows="8"></textarea>
               </div>
             </div><br>
               
