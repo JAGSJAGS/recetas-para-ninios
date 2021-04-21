@@ -10,6 +10,6 @@ class homeController extends Controller
     public function index()
     {
         $recetas = Receta::all();
-        return view('index.home',compact('recetas'));
+        return view('index.index',compact('recetas'));
     }
 }
