@@ -98,7 +98,7 @@ ul, ol {
             
             <div class="mb-4">
               <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
-              <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file">
+              <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file" accept='image/*/'>
             </div><br><br>
 
             <div class="row mb-3">
