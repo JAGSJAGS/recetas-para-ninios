@@ -16,9 +16,15 @@ class recetaController extends Controller
     {
         
         if($request->hasFile('imagen')){
+            //
+            $validatedData = $request->validate([
+             'imagen' => 'required|mimes:jpeg,png,bmp,jpg',
+            ]);
+             // 
             $file = $request->file('imagen');
             $name = time().$file->getClientOriginalName();
             $file->move(public_path().'/images/',$name);
+
         }
         $receta = new Receta();
         $receta->nombre = $request->input('Nombre');
