@@ -11,7 +11,7 @@ class Receta extends Migration
      *
      * @return void
      */
-    public function up()
+    /**public function up()
     {
         Schema::create('receta', function (Blueprint $table) {
             $table->engine = 'InnoDB';
