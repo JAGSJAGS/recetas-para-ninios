@@ -101,16 +101,15 @@ input:valid {
           <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
             @csrf
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre:</label>
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
               <div class="col-sm-10">
-                <input class="form-control" name="Nombre" rows="3" required pattern="[A-Z a-z]+"  minlength="5" maxlength="40">
+                <input class="form-control" name="Nombre" rows="1" required pattern="[A-Z a-z]+"  minlength="5" maxlength="40">
               </div>
             </div><br><br>
             
             <div class="mb-4">
               <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
-              <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file" accept='image/*/'>
-              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file">
+              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*/'>
             </div><br><br>
 
             <div class="row mb-3">

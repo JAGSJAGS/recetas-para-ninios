@@ -18,7 +18,8 @@ class Receta extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->longText('ingredientes');
-            $table->longText('ingredientes_alternativos');
+            //$table->longText('ingredientes_alternativos');
+            $table->longText('ingredientes_alternativos')->nullable();
             $table->longText('pasos');
             $table->string('ruta_imagen');
             $table->softDeletes();
