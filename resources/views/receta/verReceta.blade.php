@@ -68,7 +68,7 @@ ul, ol {
                <li><a href="#">Menú</a>             
                    <ul>
                        <li><a href="/">Inicio</a> </li>
-                       <li><a href="Registrar">Registrar Receta</a> </li>                      
+                       <li><a href="/Registrar">Registrar Receta</a> </li>                      
                   </ul> 
                </li>  
             </ul>

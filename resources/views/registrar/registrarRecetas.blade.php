@@ -98,6 +98,10 @@ input:valid {
         <div class="container-md container-inline bg-light w-50 border border-success">
 
           <br><br>
+         @if(session('mensaje'))
+          <div class="alert alert-success" role="alert"><h4>Registro Exitoso</h4> </div>
+         @endif
+
           <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
             @csrf
             <div class="row mb-3">
@@ -132,10 +136,13 @@ input:valid {
                 <textarea class="form-control" name="Pasos" rows="8" required minlength="5" maxlength="3000"></textarea>
               </div>
             </div><br>
-              
-            <div class="container center w-25"><button type="submit" class="btn btn-primary ">Registrar</button>
+            <div class="row mb-3">
+            <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
+            <div class="col-sm-3"><button type="submit" class="btn btn-primary ">Registrar</button></div>
             
             </div>
+              
+            
             
           </form><br>
         </div><br><br>
