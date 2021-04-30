@@ -34,6 +34,7 @@ class recetaController extends Controller
         $receta->ruta_imagen = $name;
 
         $receta->save();
-        return view('registrar.registrarRecetas');
+
+        return back()->with('mensaje','registroexito');
     }
 }
