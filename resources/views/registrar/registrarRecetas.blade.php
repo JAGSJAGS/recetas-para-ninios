@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +67,13 @@ input:valid {
 .nav li:hover > ul {
     display:block;
     
+}
+textarea {
+    resize: none;
 } 
+.main h2{
+  text-align: center
+}
     </style>
     
 </head>
@@ -78,7 +85,7 @@ input:valid {
           <div>
           <a class="navbar-brand" href="/">INICIO</a> 
             <ul class ="nav">
-               <li><a href="#">Menú-></a>            
+               <li><a href="#">Menú</a>            
                    <ul>
                        <li><a href="/">Inicio</a> </li>
                        <li><a href="Registrar">Registrar receta</a> </li>                      
@@ -109,7 +116,7 @@ input:valid {
             
             <div class="mb-4">
               <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
-              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*/'>
+              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*' size="20KB" >
             </div><br><br>
 
             <div class="row mb-3">
@@ -132,8 +139,8 @@ input:valid {
                 <textarea class="form-control" name="Pasos" rows="8" required minlength="5" maxlength="3000"></textarea>
               </div>
             </div><br>
-              
-            <div class="container center w-25"><button type="submit" class="btn btn-primary ">Registrar</button>
+
+            <div class="container center w-25"><button  type="submit" class="btn btn-primary ">Registrar</button>
             
             </div>
             
