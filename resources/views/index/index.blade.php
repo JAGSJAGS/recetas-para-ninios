@@ -12,6 +12,9 @@
     padding: 0px;
     margin: 0px;  
 }
+.body{
+    background-color: #EAFDEA;
+}
 .main{
     background-color: #EAFDEA;
 }
@@ -75,7 +78,7 @@ ul, ol {
 
     </style>
 </head>
-<body>
+<body class="body">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">

@@ -17,6 +17,7 @@ class Receta extends Migration
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
             $table->string('nombre');
+            $table->smallInteger('edad');
             $table->longText('ingredientes');
             //$table->longText('ingredientes_alternativos');
             $table->longText('ingredientes_alternativos')->nullable();
