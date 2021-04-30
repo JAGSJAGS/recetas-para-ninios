@@ -123,11 +123,19 @@ textarea {
               <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*' size="20KB" >
             </div><br><br>
 
+            
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes:</label>
               <div class="col-sm-1"></div>
               <div class="col-sm-9">
                 <textarea class="form-control" name="Ingredientes" rows="4" required minlength="5" maxlength="1000"></textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Edad(maximo 3 años):</label>
+              <div class="col-sm-1"></div>
+              <div class="col-sm-9">
+                <input class="form-control" name="Edad" rows="1" required pattern="[1-3]+"  minlength="1" maxlength="1">
               </div>
             </div>
             <div class="row mb-3">
@@ -146,7 +154,7 @@ textarea {
             
             <div class="row mb-3">
             <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
-            <div class="col-sm-3"><button type="submit" class="btn btn-primary ">Registrar</button></div            
+            <div class="col-sm-3"><button type="submit" class="btn btn-primary ">Registrar</button></div>          
             </div>
               
             

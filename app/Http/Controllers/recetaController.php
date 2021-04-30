@@ -29,6 +29,7 @@ class recetaController extends Controller
         $receta = new Receta();
         $receta->nombre = $request->input('Nombre');
         $receta->ingredientes = $request->input('Ingredientes');
+        $receta->edad = $request->input('Edad');
         $receta->ingredientes_alternativos = $request->input('IngredientesAlternativos');
         $receta->pasos = $request->input('Pasos');
         $receta->ruta_imagen = $name;

@@ -11,6 +11,7 @@ class Receta extends Model
         'id',
         'nombre',
         'ingredientes',
+        'edad',
         'ingredientes_alternativos',
         'pasos'
     ];
