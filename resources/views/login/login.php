@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <title>Recetas Para Niños</title>
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/master.css">
 
     <style>
         * {
     padding: 0px;
     margin: 0px;  
-}
-.body{
-    background-color: #EAFDEA;
 }
 .main{
     background-color: #EAFDEA;
@@ -58,30 +56,14 @@ ul, ol {
     display:block;
     
 } 
-.main h1{
-  text-align: center;
-}
-.scroll{
-    border:transparent;
-    height:520px; 
-    width:320px; 
-    overflow-y:scroll; 
-    overflow-x: hidden;
-    color x : transparent;
-}
-.main img { 
-  width: 226px; 
-  height: 175px;
-  object-fit: cover;
-}
-
 
     </style>
 </head>
-  <body class="body">
-    
+<body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
+          
           <div>
           <a class="navbar-brand" href="/">INICIO</a>
            
@@ -89,47 +71,32 @@ ul, ol {
                <li><a href="#">Menú</a>             
                    <ul>
                        <li><a href="/">Inicio</a> </li>
-                       <li><a href="Registrar">Registrar receta</a> </li>
+                       
                                             
                   </ul> 
                </li>  
             </ul>
         </div>
 
-
-        <!esto es el buscador btn-block >
-      <nav class="navbar navbar-light bg-light">
-          <div class="container-fluid">
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-               </form>
-          </div>
+        </div>
       </nav>
-
-
-
-
-
-
-          </div>
-      </nav>
+      
       <main class="main">
         <br>
-        <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
-        <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow: scroll;"><br>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-        @foreach($recetas as $receta)
-          <div class="col">
-            <div class="card h-100 border border-dark">
-            <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
-              <div class="card-body">
-                <h5 class="card-title">{{$receta->nombre}}</h5>
-              </div>
-            </div>
-          </div>
-        @endforeach
-        </div> <br>   
-        </div><br>
+         <br>
+         <br>     
+        <div class="login-box">
+            <h1>BIENVENIDO</h1>
+        <form>
+            <label for="username">USUARIO </label><br>
+            <input type="text" placeholder="Nombre de usuario"><br>
+
+            <label for="contraseña">CONTRASEÑA </label><br>
+            <input type="password" placeholder="Ingrese contraseña"><br>
+            <input type="submit" value="Iniciar Sesion">
+
+        </form>
+    </div>
       </main>
 
 
