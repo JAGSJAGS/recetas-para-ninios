@@ -61,7 +61,7 @@ ul, ol {
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-          
+        
           <div>
           <a class="navbar-brand" href="/">INICIO</a> 
             <ul class ="nav">
@@ -73,7 +73,7 @@ ul, ol {
                </li>  
             </ul>
         </div>
-
+        
         </div>
       </nav>
       
@@ -81,7 +81,57 @@ ul, ol {
         <br>
         <div class="container w-50 center "><h1>{{$receta->nombre}}</h1></div>
 
-      </main>
+
+
+
+
+        <IMG>aqui creo q se hace referencia a la imagen </IMG>
+
+<h5 class="card-title">Ingredientes</h5>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">aqui van los ingredientes</p>
+  </div>
+</div>
+
+<h5 class="card-title">edad</h5>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h6 class="card-subtitle mb-2 text-muted">aqui va la edad</h6>
+
+  </div>
+</div>
+
+<h5 class="card-title">Ingredientes alternativos</h5>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">aqui van los ingredientes alternativos de la receta</p>
+  </div>
+</div>
+
+<h5 class="card-title">Preparado</h5>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">hacer referencia a la base de datos para recuperar el preparado de la 
+    recetaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
+    ecetaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    ecetaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  </div>
+</div>
+
+
+
+  </div>
+  <button type="button" class="btn btn-success">Retornar Al Menu</button>
+  <div>
+    
+
+
+
+</main>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

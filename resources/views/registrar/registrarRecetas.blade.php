@@ -125,12 +125,13 @@ textarea {
 
             
             <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes:</label>
-              <div class="col-sm-1"></div>
-              <div class="col-sm-9">
+             <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes:</label>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-9">
                 <textarea class="form-control" name="Ingredientes" rows="4" required minlength="5" maxlength="1000"></textarea>
               </div>
             </div>
+            
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Edad(maximo 3 años):</label>
               <div class="col-sm-1"></div>

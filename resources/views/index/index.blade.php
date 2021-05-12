@@ -78,11 +78,10 @@ ul, ol {
 
     </style>
 </head>
-<body class="body">
-
+  <body class="body">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-          
           <div>
           <a class="navbar-brand" href="/">INICIO</a> 
             <ul class ="nav">
@@ -95,13 +94,26 @@ ul, ol {
             </ul>
         </div>
 
-        </div>
+
+        <!esto es el buscador btn-block >
+      <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+               </form>
+          </div>
       </nav>
-      
+
+
+
+
+
+
+          </div>
+      </nav>
       <main class="main">
         <br>
         <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
-
         <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-4 g-4">
         @foreach($recetas as $receta)
@@ -114,7 +126,7 @@ ul, ol {
             </div>
           </div>
         @endforeach
-        </div> <br>         
+        </div> <br>   
         </div><br>
       </main>
 
