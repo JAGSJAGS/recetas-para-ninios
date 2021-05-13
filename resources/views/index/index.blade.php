@@ -102,10 +102,11 @@ ul, ol {
         <br>
         <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
 
-        <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow: scroll;"><br>
+        <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow-y: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-4 g-4">
         @foreach($recetas as $receta)
           <div class="col">
+          grdsogfvirdsoigrdjmiordgiosroirdgsiodrg
             <div class="card h-100 border border-dark">
             <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
               <div class="card-body">
