@@ -81,7 +81,7 @@ ul, ol {
                    <ul>
                        <li><a href="/">Inicio</a> </li>
                        <li><a href="Registrar">Registrar receta</a> </li>
-                       <li><a href="/">Lista de Recetas</a> </li>
+                       <li><a href="/Recetas">Lista de Recetas</a> </li>
                                             
                   </ul> 
                </li>
@@ -94,54 +94,25 @@ ul, ol {
       
       <main class="main">
         <br>
-        <div class="container w-50 center "><h1>Lista De Publicaciones</h1></div>
-        <div id="main-container">
-            <table>
+        <div class="container-md w-50 "><h1>Lista De Publicaciones</h1></div>
+        <div id="main-container" class="w-50 container-md">
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Nombre</th><th>Modificar/Eliminar</th>
+                        <th>Nombre</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
+                @foreach($recetas as $receta)
                 <tr>
-                    <td>sal</td>
-                    <td>
-                        <button><i class="far fa-edit"></i></button>
-                        <button><i class="fas fa-trash-alt"></i></button>
-                    </td>
+                    <td>{{$receta->nombre}}</td>
+                    <td><button><i class="far fa-edit"></i></button></td>
+                    <td><button><i class="fas fa-trash-alt"></i></button></td>
                 </tr>
-                <tr>
-                    <td>pam</td><td></td>
-                </tr>
-                <tr>
-                    <td>manzana</td><td></td>
-                </tr>
-                <tr>
-                    <td>sakj</td><td></td>
-                </tr>
-                <tr>
-                    <td>yuguy</td><td></td>
-                </tr>
-                <tr>
-                    <td>fsd</td><td></td>
-                </tr>
-
+                @endforeach
             </table>
         </div>
-        
-        
-
-        <!--<div class="container-md container-inline w-75 " id="layer1" style="height:450px; overflow: scroll;"><br>-->
-        <!--<div class="row row-cols-1 row-cols-md-4 g-4">-->
-        <!--@foreach($recetas as $receta)
-          <div class="col">
-            <div class="card h-100 border border-dark">
-            <a href=""><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
-              <div class="card-body">
-                <h5 class="card-title">{{$receta->nombre}}</h5>
-              </div>
-            </div>
-          </div>
-        @endforeach-->
         </div> <br>         
         </div><br>
     
