@@ -95,9 +95,21 @@ ul, ol {
             </ul>
         </div>
 
+
+
+        <! –– barra de busqueda se cambio "navbar navbar-light bg-light"por lo de abajo––>
+      <nav class="container center">
+              <div class="container-fluid">
+                 <form class="d-flex">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+      </nav>
+
+
         </div>
       </nav>
-      
+
       <main class="main">
         <br>
         <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
