@@ -20,3 +20,4 @@ Route::get('/','homeController@index');
 Route::get('Registrar','recetaController@index');//muestra formulario de registrar receta
 Route::post('Registrar','recetaController@registrar');//registra receta
 Route::get('/Receta/{id}','verRecetaController@show');//muestra receta
+Route::get('/Recetas','listaController@listar');

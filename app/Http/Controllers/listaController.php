@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Receta;
 
 class listaController extends Controller
 {
     public function listar()
     {
-        
-        return view('Prueba_ListadePublicaciones.lista');
+        $recetas = Receta::all();
+        return view('Prueba_ListadePublicaciones.lista',compact('recetas'));
     }
 }
