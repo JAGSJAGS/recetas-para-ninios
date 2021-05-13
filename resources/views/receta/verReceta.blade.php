@@ -75,13 +75,70 @@ ul, ol {
         </div>
 
         </div>
-      </nav>
+    </nav>
       
-      <main class="main">
+
+    <main class="main">
         <br>
         <div class="container w-50 center "><h1>{{$receta->nombre}}</h1></div>
 
-      </main>
+cambios"espacios a rellenar"
+
+<div class="container w-70 center ">
+
+
+            <div class="card bg-dark text-white">
+                    <img src="..." class="card-img" alt="...">
+                <div class="card-img-overlay">
+                     <h5 class="card-title">nombre de la receta??</h5>
+                </div>
+            </div>
+
+            <h5 class="card-title">edad del niño</h5>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                         <p class="card-text">5.</p>
+                 </div>
+            </div>
+
+
+            <h5 class="card-title">Ingredientes</h5>
+            <div class="card w-50">
+                  <div class="card-body">
+                      <p class="card-text">aqui van los ingredientes de la receta.</p>
+                  </div>
+            </div>
+
+
+            <h5 class="card-title">Ingredientes Alternativos</h5>
+            <div class="card w-50">
+                    <div class="card-body">
+                         <p class="card-text">aqui van los ingredientes alternativos de la receta.</p>
+                    </div>
+            </div>
+
+
+            <h5 class="card-title">Preparado</h5>
+            <div class="card w-50">
+                    <div class="card-body">
+                        <p class="card-text">aqui va el preparado de la receta.
+                         alkfjalkdfjklajfklajfdkasjfklajflkajsflkajsfdksajfaaf
+                          adskflajadklfjaklfjakljdsfkajsdfklajlsdfjaslkfjakfjfasf</p>
+                    </div>
+            </div>
+
+                <div>
+                            <button type="button" class="btn btn-success">Retornar</button>
+                </div>
+
+
+ </div>
+cambiosfin
+
+</main>
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
