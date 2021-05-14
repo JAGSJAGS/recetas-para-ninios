@@ -13,13 +13,14 @@
     margin: 0px;  
 }
 .body{
-    background-color: #EAFDEA;
+    background-color: #ffffff;
 }
 .main{
-    background-color: #EAFDEA;
+    background-color: #ffffff;
 }
 #layer1{
-    background-color: #EAFDEA;
+    background-color: #ffdfdf;
+    
 }
 #header{ 
     
@@ -32,7 +33,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color: #198754;
+    background-color: #DC143C;
     color:#fff;
     text-decoration:none;
     padding: 10px 15px;
@@ -44,7 +45,7 @@ ul, ol {
    
 }
 .nav li a:hover{
-   background-color:#154830;
+   background-color:#DC143C;
 
 }
 
@@ -80,11 +81,11 @@ ul, ol {
 </head>
 <body class="body">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/">INICIO</a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
@@ -98,7 +99,7 @@ ul, ol {
 
 
         <! –– barra de busqueda se cambio "navbar navbar-light bg-light"por lo de abajo––>
-      <nav class="container center">
+      <nav class="container center w-50" >
               <div class="container-fluid">
                  <form class="d-flex">
                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -112,15 +113,14 @@ ul, ol {
 
       <main class="main">
         <br>
-        <div class="container w-50 center "><h1>Recetas Saludables Para Niños</h1></div>
-
+        <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Recetas Saludables Para Niños</h1></div>
+        
         <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow-y: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-4 g-4">
         @foreach($recetas as $receta)
           <div class="col">
-          grdsogfvirdsoigrdjmiordgiosroirdgsiodrg
             <div class="card h-100 border border-dark">
-            <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta"></a>
+            <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; max-height: 90%;"></a>
               <div class="card-body">
                 <h5 class="card-title">{{$receta->nombre}}</h5>
               </div>
