@@ -21,6 +21,7 @@ class recetaController extends Controller
              'imagen' => 'required|mimes:jpeg,png,bmp,jpg',
             ]);
              // 
+             
             $file = $request->file('imagen');
             $name = time().$file->getClientOriginalName();
             $file->move(public_path().'/images/',$name);

@@ -62,19 +62,7 @@ ul, ol {
 .main h1{
   text-align: center;
 }
-.scroll{
-    border:transparent;
-    height:520px; 
-    width:320px; 
-    overflow-y:scroll; 
-    overflow-x: hidden;
-    color x : transparent;
-}
-.main img { 
-  width: 226px; 
-  height: 175px;
-  object-fit: cover;
-}
+
 
 
     </style>
@@ -90,7 +78,7 @@ ul, ol {
                <li><a href="#">Menú</a>             
                    <ul>
                        <li><a href="/">Inicio</a> </li>
-                       <li><a href="Registrar">Registrar receta</a> </li>                      
+                       <li><a href="/Recetas">Lista de Recetas</a> </li>                      
                   </ul> 
                </li>  
             </ul>

@@ -56,6 +56,7 @@ ul, ol {
     display:block;
     
 } 
+
     </style>
 </head>
 <body>
@@ -87,7 +88,7 @@ ul, ol {
 
 
             <div class="card bg-primary w-50 text-black">
-                    <img src="..." class="card-img" alt="...">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""...">
                 <div class="card-img-overlay">
                      <h5 class="card-title" >nombre de la receta??</h5>
                 </div>
@@ -97,7 +98,7 @@ ul, ol {
             <h5 class="card-title">Edad del niño</h5>
             <div class="card w-25" >
                 <div class="card-body">
-                         <p class="card-text">5.</p>
+                         <p class="card-text">{{$receta->edad}}</p>
                  </div>
             </div>
 
@@ -105,7 +106,7 @@ ul, ol {
             <h5 class="card-title">Ingredientes</h5>
             <div class="card w-100">
                   <div class="card-body">
-                      <p class="card-text">aqui van los ingredientes de la receta.</p>
+                      <p class="card-text">{{$receta->ingredientes}}</p>
                   </div>
             </div>
 
@@ -113,21 +114,21 @@ ul, ol {
             <h5 class="card-title">Ingredientes Alternativos</h5>
             <div class="card w-100">
                     <div class="card-body">
-                         <p class="card-text">aqui van los ingredientes alternativos de la receta.</p>
+                         <p class="card-text">{{$receta->ingredientes_alternativos}}</p>
                     </div>
             </div>
-
 
             <h5 class="card-title">Preparado</h5>
             <div class="card w-100">
                     <div class="card-body">
-                        <p class="card-text">aqui va el preparado de la receta.
-                         alkfjalkdfjklajfklajfdkasjfklajflkajsflkajsfdksajfaaf</p>
+                        <p class="card-text">{{$receta->pasos}}</p>
                     </div>
             </div>
 <br>
                 <div>
                             <button type="button" class="btn btn-danger" >Retornar</button>
+                    <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
+
                 </div>
 
 
