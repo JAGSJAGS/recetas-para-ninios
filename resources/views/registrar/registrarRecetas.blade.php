@@ -15,10 +15,11 @@
     margin: 0px;  
 }
 .main{
-    background-color: #EAFDEA;
+    background-color: #ffffff;
+    color: black;
 }
 #layer1{
-    background-color: #EAFDEA;
+    /*background-color: #ffdfdf;*/
 }
 #header{ 
     
@@ -31,7 +32,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color: #198754;
+    background-color: #DC143C;
     color:#fff;
     text-decoration:none;
     padding: 10px 15px;
@@ -43,7 +44,7 @@ ul, ol {
    
 }
 .nav li a:hover{
-   background-color:#154830;
+   background-color:#DC143C;
 
 }
 
@@ -58,20 +59,22 @@ ul, ol {
 }
 textarea {
     resize: none;
+    
 } 
 .main h2{
   text-align: center
+  
 }
     </style>
     
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/">INICIO</a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>            
                    <ul>
@@ -88,17 +91,29 @@ textarea {
 
       <main class="main">        
       <br>
-      <div class="container w-25 center"><h2>Registrar Recetas</h2></div><br>
-
-        <div class="container-md container-inline bg-light w-50 border border-success">
-
+      <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>Registrar Recetas</h1></div>
+        <div class="container-md container-inline bg-light w-50 "id="layer1">
           <br><br>
-          @if(session('mensaje'))
-          <div class="alert alert-success" role="alert"><h4>Registro Exitoso</h4> </div>
+
+         @if(session('mensaje'))
+          <div class="alert alert-success" role="alert" style="background-color: #585858;"><h4><FONT COLOR="white">Registro Exitoso</h4> </div>
          @endif
 
             <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
             @csrf
+
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
+              <div class="col-sm-1"></div>
+              <div class="col-sm-9">
+                <input class="form-control" name="Nombre" rows="1" required pattern="[A-Z a-z]+"  minlength="5" maxlength="40">
+              </div>
+            </div><br><br>
+            
+            <div class="mb-4">
+              <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
+              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*' size="20KB" >
+            </div><br><br>
 
             <div class="row mb-3">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
@@ -139,8 +154,8 @@ textarea {
             </div><br>
             
             <div class="row mb-3">
-            <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
-            <div class="col-sm-3"><button type="submit" class="btn btn-primary ">Registrar</button></div>          
+            <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Retornar Inicio</a></div>
+            <div class="col-sm-3"><button type="submit" class="btn btn-dark ">Registrar</button></div>          
             </div>
               
             

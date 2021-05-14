@@ -13,10 +13,11 @@
     margin: 0px;  
 }
 .main{
-    background-color: #EAFDEA;
+    background-color: #fff;
+    color: black;
 }
 #layer1{
-    background-color: #EAFDEA;
+    background-color: #fff;
 }
 #header{ 
     
@@ -29,7 +30,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color: #198754;
+    background-color: #DC143C;
     color:#fff;
     text-decoration:none;
     padding: 10px 15px;
@@ -41,7 +42,7 @@ ul, ol {
    
 }
 .nav li a:hover{
-   background-color:#154830;
+   background-color:#DC143C;
 
 }
 
@@ -60,11 +61,11 @@ ul, ol {
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/">INICIO</a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
@@ -81,20 +82,21 @@ ul, ol {
 
     <main class="main">
         <br>
-        <div class="container w-50 center "><h1>{{$receta->nombre}}</h1></div>
+        <div class="container w-50 center "style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>{{$receta->nombre}}</h1></div>
 
-cambios"espacios a rellenar"
+<div class="container-md container-inline bg-light w-75" style="padding:40px 100px ;">
 
-<div class="container w-70 center ">
 
-    
-            <div class="card bg-dark text-white">
-                <img class="card-img-top" src="/images/{{$receta->ruta_imagen}}"  alt="Imagen de Receta">
+            <div class="card bg-primary w-50 text-black">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""...">
+                <div class="card-img-overlay">
+                     <h5 class="card-title" >nombre de la receta??</h5>
+                </div>
             </div>
-    
+            <br><br>
 
-            <h5 class="card-title">edad del niño</h5>
-            <div class="card" style="width: 18rem;">
+            <h5 class="card-title">Edad del niño</h5>
+            <div class="card w-25" >
                 <div class="card-body">
                          <p class="card-text">{{$receta->edad}}</p>
                  </div>
@@ -102,7 +104,7 @@ cambios"espacios a rellenar"
 
 
             <h5 class="card-title">Ingredientes</h5>
-            <div class="card w-50">
+            <div class="card w-100">
                   <div class="card-body">
                       <p class="card-text">{{$receta->ingredientes}}</p>
                   </div>
@@ -110,28 +112,27 @@ cambios"espacios a rellenar"
 
 
             <h5 class="card-title">Ingredientes Alternativos</h5>
-            <div class="card w-50">
+            <div class="card w-100">
                     <div class="card-body">
                          <p class="card-text">{{$receta->ingredientes_alternativos}}</p>
                     </div>
             </div>
 
-
-            <h5 class="card-title">Pasos</h5>
-            <div class="card w-50">
+            <h5 class="card-title">Preparado</h5>
+            <div class="card w-100">
                     <div class="card-body">
                         <p class="card-text">{{$receta->pasos}}</p>
                     </div>
             </div>
-
+<br>
                 <div>
+                            <button type="button" class="btn btn-danger" >Retornar</button>
                     <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
-                           
+
                 </div>
 
 
  </div>
-cambiosfin
 
 </main>
 
