@@ -107,7 +107,7 @@ ul, ol {
                 @foreach($recetas as $receta)
                 <tr>
                     <td>{{$receta->nombre}}</td>
-                    <td><button><i class="far fa-edit"></i></button></td>
+                    <td><a href="/Recetas/1/editar"><button href="/Recetas/1/editar"><i class="far fa-edit" ></i></button></a></td>
                     <td><button><i class="fas fa-trash-alt"></i></button></td>
                 </tr>
                 @endforeach

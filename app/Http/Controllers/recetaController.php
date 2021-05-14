@@ -39,4 +39,9 @@ class recetaController extends Controller
 
         return back()->with('mensaje','registroexito');
     }
+    public function editar()
+    {
+        
+        return view('receta.editarReceta');
+    }
 }
