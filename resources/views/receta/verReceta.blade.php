@@ -55,10 +55,7 @@ ul, ol {
     display:block;
     
 } 
-img{
-    height: 100px;
-    width: 100px;
-}
+
     </style>
 </head>
 <body>
@@ -90,10 +87,11 @@ cambios"espacios a rellenar"
 
 <div class="container w-70 center ">
 
-
+    
             <div class="card bg-dark text-white">
-                <img class="card-img-top" src="images/{{$receta->ruta_imagen}}"  alt="">
+                <img class="card-img-top" src="/images/{{$receta->ruta_imagen}}"  alt="Imagen de Receta">
             </div>
+    
 
             <h5 class="card-title">edad del niño</h5>
             <div class="card" style="width: 18rem;">
