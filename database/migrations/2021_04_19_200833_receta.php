@@ -26,6 +26,23 @@ class Receta extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
+        Schema::create('usuario', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->string('nombre');
+            $table->string('apellido');
+            $table->string('correo');
+            $table->bigInteger('telefono');
+            $table->softDeletes();
+            $table->timestamps();
+        });
+        DB::table("usuario")
+        ->insert([
+            "nombre" => "administrador",
+            "telefono" => "12345678",
+            "apellido" => "administra",
+            "correo" => "administrador@gmail.com",
+        ]);
+
     }
 
     /**
@@ -36,5 +53,6 @@ class Receta extends Migration
     public function down()
     {
         Schema::drop('receta');
+        Schema::drop('usuario');
     }
 }
