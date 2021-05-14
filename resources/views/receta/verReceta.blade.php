@@ -55,6 +55,10 @@ ul, ol {
     display:block;
     
 } 
+img{
+    height: 100px;
+    width: 100px;
+}
     </style>
 </head>
 <body>
@@ -88,16 +92,13 @@ cambios"espacios a rellenar"
 
 
             <div class="card bg-dark text-white">
-                    <img src="..." class="card-img" alt="...">
-                <div class="card-img-overlay">
-                     <h5 class="card-title">nombre de la receta??</h5>
-                </div>
+                <img class="card-img-top" src="images/{{$receta->ruta_imagen}}"  alt="">
             </div>
 
             <h5 class="card-title">edad del niño</h5>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                         <p class="card-text">5.</p>
+                         <p class="card-text">{{$receta->edad}}</p>
                  </div>
             </div>
 
@@ -105,7 +106,7 @@ cambios"espacios a rellenar"
             <h5 class="card-title">Ingredientes</h5>
             <div class="card w-50">
                   <div class="card-body">
-                      <p class="card-text">aqui van los ingredientes de la receta.</p>
+                      <p class="card-text">{{$receta->ingredientes}}</p>
                   </div>
             </div>
 
@@ -113,22 +114,21 @@ cambios"espacios a rellenar"
             <h5 class="card-title">Ingredientes Alternativos</h5>
             <div class="card w-50">
                     <div class="card-body">
-                         <p class="card-text">aqui van los ingredientes alternativos de la receta.</p>
+                         <p class="card-text">{{$receta->ingredientes_alternativos}}</p>
                     </div>
             </div>
 
 
-            <h5 class="card-title">Preparado</h5>
+            <h5 class="card-title">Pasos</h5>
             <div class="card w-50">
                     <div class="card-body">
-                        <p class="card-text">aqui va el preparado de la receta.
-                         alkfjalkdfjklajfklajfdkasjfklajflkajsflkajsfdksajfaaf
-                          adskflajadklfjaklfjakljdsfkajsdfklajlsdfjaslkfjakfjfasf</p>
+                        <p class="card-text">{{$receta->pasos}}</p>
                     </div>
             </div>
 
                 <div>
-                            <button type="button" class="btn btn-success">Retornar</button>
+                    <div class="col-sm-9"><a type="submit" class="btn btn-success"  href="/">Retornar Inicio</a></div>
+                           
                 </div>
 
 

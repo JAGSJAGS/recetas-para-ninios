@@ -52,18 +52,6 @@ ul, ol {
      position: absolute;
      min-width: 140px;
 }
-input:invalid {
-  border: 2px dashed red;
-}
-
-input:invalid:required {
-  background-image: linear-gradient(to right, rgb(250, 248, 248), rgb(244, 245, 244));
-}
-
-input:valid {
-  border: 2px solid black;
-}
-
 .nav li:hover > ul {
     display:block;
     
@@ -105,25 +93,23 @@ textarea {
         <div class="container-md container-inline bg-light w-50 border border-success">
 
           <br><br>
-         @if(session('mensaje'))
+          @if(session('mensaje'))
           <div class="alert alert-success" role="alert"><h4>Registro Exitoso</h4> </div>
          @endif
 
-          <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
+            <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
             @csrf
-            <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
-              <div class="col-sm-10">
-                <input class="form-control" name="Nombre" rows="1" required pattern="[A-Z a-z]+"  minlength="5" maxlength="40">
-              </div>
-            </div><br><br>
-            
-            <div class="mb-4">
-              <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
-              <input class="form-control form-control-sm"  required name="imagen" id="formFileSm" type="file" accept='image/*' size="20KB" >
-            </div><br><br>
 
-            
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
+                <div class="col-sm-10">
+                  <input class="form-control" name="Nombre" required rows="1" minlength="5" maxlength="40">
+                </div>
+              </div><br><br>
+              <div class="mb-4">
+                <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
+                <input class="form-control form-control-sm" name="imagen" required id="formFileSm" type="file" accept='image/*'  >
+              </div><br><br>
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes:</label>
               <div class="col-sm-1"></div>
@@ -160,6 +146,7 @@ textarea {
             
             
           </form><br>
+        
         </div><br><br>
       </main>
 
