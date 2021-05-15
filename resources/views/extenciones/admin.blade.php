@@ -164,7 +164,7 @@ ul, ol {
               </div>
       </nav>
 
-      <div>Admin<a href="/IniciarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
+      <div><FONT COLOR="white">Administrador</FONT><br><a href="/IniciarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
         </div>
       </nav>
 
