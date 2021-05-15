@@ -16,12 +16,9 @@ class recetaController extends Controller
     {
         
         if($request->hasFile('imagen')){
-            //
             $validatedData = $request->validate([
              'imagen' => 'required|mimes:jpeg,png,bmp,jpg',
             ]);
-             // 
-             
             $file = $request->file('imagen');
             $name = time().$file->getClientOriginalName();
             $file->move(public_path().'/images/',$name);
@@ -39,9 +36,35 @@ class recetaController extends Controller
 
         return back()->with('mensaje','registroexito');
     }
-    public function editar()
+    public function editar($id)
     {
+        $receta = Receta::find($id);
+        return view('receta.editarReceta',compact('receta'));
+    }
+
+    public function actualizar($id,Request $request)
+    {
+        $receta = Receta::find($id);
+        $name = $receta->ruta_imagen;
+
+        if($request->hasFile('imagen')){
+            $validatedData = $request->validate([
+             'imagen' => 'required|mimes:jpeg,png,bmp,jpg',
+            ]);
+            $file = $request->file('imagen');
+            $name = time().$file->getClientOriginalName();
+            $file->move(public_path().'/images/',$name);
+
+        }
         
-        return view('receta.editarReceta');
+        $receta->update([
+        'nombre'=> $request->Nombre,
+        'edad'=> $request->Edad,
+        'ingredientes'=> $request->Ingredientes,
+        'ingredientes_alternativos'=> $request->IngredientesAlternativos,
+        'pasos'=> $request->Pasos,   
+        'ruta_imagen'=> $name]);
+        //return view('receta.editarReceta',compact('receta'))->with('mensaje','registroexito');
+        return back()->with('mensaje','registroexito');
     }
 }

@@ -3,8 +3,8 @@
 <br>
         <div class="container-md w-50 "><h1>Lista De Publicaciones</h1></div>
         <div id="main-container" class="w-50 container-md">
-            <table class="table table-striped">
-                <thead>
+            <table class="table border-dark">
+                <thead class="table-dark">
                     <tr>
                         <th>Nombre</th>
                         <th>Modificar</th>
@@ -14,8 +14,8 @@
                 @foreach($recetas as $receta)
                 <tr>
                     <td>{{$receta->nombre}}</td>
-                    <td><a href="/Recetas/1/editar"><button href="/Recetas/1/editar"><i class="far fa-edit" ></i></button></a></td>
-                    <td><button><i class="fas fa-trash-alt"></i></button></td>
+                    <td><a href="/Recetas/{{$receta->id}}/editar" type="submit" class="btn btn-dark">Editar Receta</a></td>
+                    <td><a href="" type="submit" class="btn btn-danger">Eliminar Receta</a></td>
                 </tr>
                 @endforeach
             </table>

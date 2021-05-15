@@ -11,7 +11,7 @@
         * {
     padding: 0px;
     margin: 0px;  
-}
+} 
 .login-box {
     width: 420px;
     height: 440px;
@@ -57,28 +57,6 @@
     color: #fff;
     font-size: 20px;
     border-radius: 20px;
-}
-#main-container{
-    margin: 100px auto;
-    width: 800px;
-}
-table{
-    background-color: white;
-    text-align: left;
-    border-collapse: collapse;
-    width: 100%;
-}
-th, td{
-    
-    padding: 15;
-}
-thead{
-    background-color: #198754;
-    border-bottom: solid 5px #343a40;
-    color:white;
-}
-.navbar-brand > a{
-    text-align: center;
 }
 .body{
     background-color: #ffffff;

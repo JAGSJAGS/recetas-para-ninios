@@ -13,7 +13,8 @@ class Receta extends Model
         'ingredientes',
         'edad',
         'ingredientes_alternativos',
-        'pasos'
+        'pasos',
+        'ruta_imagen'
     ];
     protected $guarded = ['id'];
     protected $primaryKey = 'id';
