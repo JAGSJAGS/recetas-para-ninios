@@ -39,9 +39,22 @@ class recetaController extends Controller
 
         return back()->with('mensaje','registroexito');
     }
-    public function editar()
+    public function editar($id)
     {
-        
-        return view('receta.editarReceta');
+        $receta = Receta::find($id);
+        return view('receta.editarReceta',compact('receta'));
+    }
+
+    public function actualizar($id,Request $request)
+    {
+        $receta = Receta::find($id);
+        //dd($request);
+        $receta->update([
+        'nombre'=> $request->Nombre,
+        'edad'=> $request->Edad,
+        'ingredientes'=> $request->Ingredientes,
+        'ingredientes_alternativos'=> $request->IngredientesAlternativos,
+        'pasos'=> $request->Pasos]);
+        return view('receta.editarReceta',compact('receta'));
     }
 }

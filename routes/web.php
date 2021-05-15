@@ -21,5 +21,7 @@ Route::get('Registrar','recetaController@index');//muestra formulario de registr
 Route::post('Registrar','recetaController@registrar');//registra receta
 Route::get('/Receta/{id}','verRecetaController@show');//muestra receta
 Route::get('/Recetas','listaController@listar');//listar receta
-Route::get('/Recetas/{id}/editar','recetaController@editar');
+Route::get('/Recetas/{id}/editar','recetaController@editar');//mostrar formulario para editar
 Route::get('/IniciarSeción','loginController@index');
+Route::put('/Receta/{id}','recetaController@actualizar');//ruta para actualizar
+
