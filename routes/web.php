@@ -22,3 +22,4 @@ Route::post('Registrar','recetaController@registrar');//registra receta
 Route::get('/Receta/{id}','verRecetaController@show');//muestra receta
 Route::get('/Recetas','listaController@listar');//listar receta
 Route::get('/Recetas/{id}/editar','recetaController@editar');
+Route::get('/IniciarSeción','loginController@index');
