@@ -5,19 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <title>Iniciar Sesion</title>
-    <link rel="stylesheet" href="css/master.css">
+    <title>Recetas Para Niños - @yield('title')</title>
 
     <style>
         * {
     padding: 0px;
     margin: 0px;  
 }
+.login-box {
+    width: 420px;
+    height: 440px;
+    background: rgb(230,230, 250);
+    
+    transform: translate(110%,-10%);
+}
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.login-box label {
+    margin: 20;
+    padding: 0;
+    font-weight: bold;
+    display:block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    outline: none;
+    height: 30px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #198754;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+#main-container{
+    margin: 100px auto;
+    width: 800px;
+}
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    
+    padding: 15;
+}
+thead{
+    background-color: #198754;
+    border-bottom: solid 5px #343a40;
+    color:white;
+}
+.navbar-brand > a{
+    text-align: center;
+}
+.body{
+    background-color: #ffffff;
+}
 .main{
-    background-color: #EAFDEA;
+    background-color: #ffffff;
 }
 #layer1{
-    background-color: #EAFDEA;
+    background-color: #ffdfdf;
+    
 }
 #header{ 
     
@@ -30,7 +101,7 @@ ul, ol {
 }
 
 .nav li a {
-    background-color: #198754;
+    background-color: #DC143C;
     color:#fff;
     text-decoration:none;
     padding: 10px 15px;
@@ -42,7 +113,7 @@ ul, ol {
    
 }
 .nav li a:hover{
-   background-color:#154830;
+   background-color:#DC143C;
 
 }
 
@@ -56,47 +127,39 @@ ul, ol {
     display:block;
     
 } 
+.main h1{
+  text-align: center;
+}
+
+
 
     </style>
 </head>
-<body>
+<body class="body">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/">INICIO</a>
-           
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
                        <li><a href="/">Inicio</a> </li>
-                       
-                                            
+                       <li><a href="/Recetas">Lista de Recetas</a> </li>
+                       <li><a href="/Registrar">Registrar Receta</a> </li>                      
                   </ul> 
                </li>  
             </ul>
         </div>
 
+
+      <div><FONT COLOR="white">Administrador</FONT><br><a href="/IniciarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
         </div>
       </nav>
-      
+
       <main class="main">
-        <br>
-         <br>
-         <br>     
-        <div class="login-box">
-            <h1>BIENVENIDO</h1>
-        <form>
-            <label for="username">USUARIO </label><br>
-            <input type="text" placeholder="Nombre de usuario"><br>
-
-            <label for="contraseña">CONTRASEÑA </label><br>
-            <input type="password" placeholder="Ingrese contraseña"><br>
-            <input type="submit" value="Iniciar Sesion">
-
-        </form>
-    </div>
+        @yield('content')
       </main>
 
 

@@ -1,4 +1,4 @@
-@extends('extenciones.usuario')
+@extends('extenciones.admin')
 @section('content')
 <br>
         <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Recetas Saludables Para Niños</h1></div>
