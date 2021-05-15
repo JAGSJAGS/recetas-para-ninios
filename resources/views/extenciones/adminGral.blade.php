@@ -17,7 +17,8 @@
     height: 440px;
     background: rgb(230,230, 250);
     
-    transform: translate(110%,-10%);
+
+    margin: 100px auto;
 }
 .login-box h1 {
     margin: 0;
@@ -53,7 +54,7 @@
     border: none;
     outline: none;
     height: 40px;
-    background: #198754;
+    background: #DC143C;
     color: #fff;
     font-size: 20px;
     border-radius: 20px;

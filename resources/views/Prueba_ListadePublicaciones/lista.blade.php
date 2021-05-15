@@ -1,7 +1,7 @@
 @extends('extenciones.adminGral')
 @section('content')
 <br>
-        <div class="container-md w-50 "><h1>Lista De Publicaciones</h1></div>
+        <div class="container-md w-50" style = "font-family:Brush Script MT,arial,helvética;"><h1>Lista De Publicaciones</h1></div>
         <div id="main-container" class="w-50 container-md">
             <table class="table border-dark">
                 <thead class="table-dark">

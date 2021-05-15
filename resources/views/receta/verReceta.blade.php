@@ -1,12 +1,12 @@
 @extends('extenciones.adminGral')
 @section('content')
 <br>
-        <div class="container w-50 center "style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>{{$receta->nombre}}</h1></div>
+        <div class="container w-50 center "style = "font-family:Brush Script MT,arial,helvética;"><h1>{{$receta->nombre}}</h1></div>
 
-<div class="container-md container-inline bg-light w-75" style="padding:40px 100px ;">
-
-
-            <div class="card bg-primary w-50 text-black">
+<div class="container-md container-inline bg-light w-50">
+<br><br>
+<form class="container w-75 ">
+            <div class="card bg-primary text-black">
                     <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""...">
                 <div class="card-img-overlay">
                      <h5 class="card-title" >{{$receta->nombre}}</h5>
@@ -45,7 +45,7 @@
             </div>
 <br>   
                     <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Retornar</a></div>
+                    </form><br>
 
-
- </div>
+ </div><br><br>
  @endsection
