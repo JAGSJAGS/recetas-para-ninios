@@ -24,4 +24,5 @@ Route::get('/Recetas','listaController@listar');//listar receta
 Route::get('/Recetas/{id}/editar','recetaController@editar');//mostrar formulario para editar
 Route::get('/IniciarSeción','loginController@index');
 Route::put('/Receta/{id}','recetaController@actualizar');//ruta para actualizar
+Route::post('/','homeController@buscar');
 
