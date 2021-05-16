@@ -98,8 +98,6 @@ ul, ol {
                 
               </div>
       </nav>
-
-      <a href="/IniciarSeción"><FONT COLOR="white">Iniciar Seción</FONT></a>
         </div>
       </nav>
 

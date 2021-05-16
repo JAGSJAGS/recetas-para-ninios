@@ -11,53 +11,6 @@
         * {
     padding: 0px;
     margin: 0px;  
-} 
-.login-box {
-    width: 420px;
-    height: 440px;
-    background: rgb(230,230, 250);
-    
-
-    margin: 100px auto;
-}
-.login-box h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 50px;
-}
-
-.login-box label {
-    margin: 20;
-    padding: 0;
-    font-weight: bold;
-    display:block;
-}
-
-.login-box input {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: #fff;
-    outline: none;
-    height: 30px;
-    color: #000000;
-    font-size: 20px;
-}
-
-.login-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #DC143C;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 20px;
 }
 .body{
     background-color: #ffffff;
@@ -67,7 +20,7 @@
 }
 #layer1{
     background-color: #ffdfdf;
-    color:#000000;
+    
 }
 #header{ 
     
@@ -120,20 +73,16 @@ ul, ol {
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/IndexAdmin"><FONT COLOR="white">INICIO</FONT></a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
-                       <li><a href="/IndexAdmin">Inicio</a> </li>
-                       <li><a href="/Recetas">Lista de Recetas</a> </li>
-                       <li><a href="/Registrar">Registrar Receta</a> </li>                      
+                       <li><a href="/">Inicio</a> </li>                     
                   </ul> 
                </li>  
             </ul>
         </div>
 
-
-      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
         </div>
       </nav>
 
