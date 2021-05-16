@@ -22,7 +22,10 @@ Route::post('Registrar','recetaController@registrar');//registra receta
 Route::get('/Receta/{id}','verRecetaController@show');//muestra receta
 Route::get('/Recetas','listaController@listar');//listar receta
 Route::get('/Recetas/{id}/editar','recetaController@editar');//mostrar formulario para editar
-Route::get('/IniciarSeción','loginController@index');
+
+Route::get('IniciarSeción','loginController@index');//login index
+Route::post('IniciarSeción','loginController@login')->name('login');
+
 Route::put('/Receta/{id}','recetaController@actualizar');//ruta para actualizar
 Route::post('/','homeController@buscar');
 
