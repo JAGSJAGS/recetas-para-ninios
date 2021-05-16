@@ -83,21 +83,6 @@ ul, ol {
             </ul>
         </div>
 
-
-
-        <! –– barra de busqueda se cambio "navbar navbar-light bg-light"por lo de abajo––>
-        <nav class="container center w-50" >
-              <div class="container-fluid">
-                 <form class="d-flex" method="POST" action="/" enctype="multipart/form-data">
-                 @csrf
-                    <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
-                     <input class="form-control me-2" type="search" name="Nombre" placeholder="Buscar Receta" aria-label="Search" list="lista">
-                     <button type="submit" class="btn btn-outline-light">Buscar</button>
-                     
-                </form><datalist id="lista">@yield('lista')</datalist>
-                
-              </div>
-      </nav>
         </div>
       </nav>
 

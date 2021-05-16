@@ -12,4 +12,10 @@ class verRecetaController extends Controller
         $receta = Receta::find($id);
         return view('receta.verReceta',compact('receta'));
     }
+
+    public function show2($id)
+    {
+        $receta = Receta::find($id);
+        return view('receta.verRecetaU',compact('receta'));
+    }
 }

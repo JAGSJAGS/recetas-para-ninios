@@ -120,11 +120,11 @@ ul, ol {
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
+          <a class="navbar-brand" href="/IndexAdmin"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
-                       <li><a href="/">Inicio</a> </li>
+                       <li><a href="/IndexAdmin">Inicio</a> </li>
                        <li><a href="/Recetas">Lista de Recetas</a> </li>
                        <li><a href="/Registrar">Registrar Receta</a> </li>                      
                   </ul> 
@@ -133,7 +133,7 @@ ul, ol {
         </div>
 
 
-      <div><FONT COLOR="white">Administrador</FONT><br><a href="/IniciarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
+      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
         </div>
       </nav>
 
