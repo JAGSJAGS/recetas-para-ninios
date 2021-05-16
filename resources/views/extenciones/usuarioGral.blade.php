@@ -73,11 +73,11 @@ ul, ol {
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/Index"><FONT COLOR="white">INICIO</FONT></a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
-                       <li><a href="/Index">Inicio</a> </li>                     
+                       <li><a href="/">Inicio</a> </li>                     
                   </ul> 
                </li>  
             </ul>

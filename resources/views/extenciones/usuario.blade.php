@@ -73,11 +73,11 @@ ul, ol {
         <div class="container-fluid">
           
           <div>
-          <a class="navbar-brand" href="/Index"><FONT COLOR="white">INICIO</FONT></a> 
+          <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
-                       <li><a href="/Index">Inicio</a> </li>                     
+                       <li><a href="/">Inicio</a> </li>                     
                   </ul> 
                </li>  
             </ul>
@@ -88,7 +88,7 @@ ul, ol {
         <! –– barra de busqueda se cambio "navbar navbar-light bg-light"por lo de abajo––>
         <nav class="container center w-50" >
               <div class="container-fluid">
-                 <form class="d-flex" method="POST" action="/Index" enctype="multipart/form-data">
+                 <form class="d-flex" method="POST" action="/" enctype="multipart/form-data">
                  @csrf
                     <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
                      <input class="form-control me-2" type="search" name="Nombre" placeholder="Buscar Receta" aria-label="Search" list="lista">
