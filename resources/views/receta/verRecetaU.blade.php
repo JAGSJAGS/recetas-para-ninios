@@ -7,7 +7,7 @@
 <br><br>
 <form class="container w-75 ">
             <div class="card bg-primary text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""...">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta">
                 <div class="card-img-overlay">
                      <h5 class="card-title" >{{$receta->nombre}}</h5>
                 </div>
