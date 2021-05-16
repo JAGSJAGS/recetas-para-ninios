@@ -32,6 +32,7 @@ class Receta extends Migration
             $table->string('apellido');
             $table->string('correo');
             $table->bigInteger('telefono');
+            $table->string('contrasena');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -41,6 +42,7 @@ class Receta extends Migration
             "telefono" => "12345678",
             "apellido" => "administra",
             "correo" => "administrador@gmail.com",
+            "contrasena"=>"admin123"
         ]);
 
     }

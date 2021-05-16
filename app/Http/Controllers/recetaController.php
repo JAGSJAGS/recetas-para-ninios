@@ -14,10 +14,18 @@ class recetaController extends Controller
     }
     public function registrar(Request $request)
     {
+        $this->validate(request(),[
+            'Nombre' => ['required' , 'max:40' , ],
+            'imagen' => ['required', 'size:5  kilobytes'  ],
+            'Ingredientes' =>['required', 'max:1000'  ],
+            'Edad' =>['required', 'max:5' ],
+            'IngredientesAlternativos' =>['max:1000'  ],
+            'Pasos' =>['required', 'max:3000'   ]
+        ]);
         
         if($request->hasFile('imagen')){
             $validatedData = $request->validate([
-             'imagen' => 'required|mimes:jpeg,png,bmp,jpg',
+             'imagen' => 'required|mimes:jpeg,png,jpg',
             ]);
             $file = $request->file('imagen');
             $name = time().$file->getClientOriginalName();
