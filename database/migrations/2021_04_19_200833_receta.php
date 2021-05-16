@@ -26,7 +26,17 @@ class Receta extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
-        Schema::create('usuario', function (Blueprint $table) {
+
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+        /**Schema::create('usuario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->string('nombre');
             $table->string('apellido');
@@ -44,6 +54,9 @@ class Receta extends Migration
             "correo" => "administrador@gmail.com",
             "contrasena"=>"admin123"
         ]);
+=======
+        ]);*/
+
 
     }
 
@@ -55,6 +68,7 @@ class Receta extends Migration
     public function down()
     {
         Schema::drop('receta');
-        Schema::drop('usuario');
+        //Schema::drop('usuario');
+        Schema::dropIfExists('users');
     }
 }

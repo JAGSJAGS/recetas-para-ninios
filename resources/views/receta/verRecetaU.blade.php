@@ -1,22 +1,18 @@
-@extends('extenciones.adminGral')
+@extends('extenciones.usuarioGral')
 @section('content')
 <br>
         <div class="container w-50 center "style = "font-family:Brush Script MT,arial,helvética;"><h1>{{$receta->nombre}}</h1></div>
 
 <div class="container-md container-inline bg-light w-50">
 <br><br>
-
 <form class="container w-75 ">
-<div class="row mb-3">
-            <div class="card bg-light border border-light text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
-
+            <div class="card bg-primary text-black">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta">
                 <div class="card-img-overlay">
-                     
+                     <h5 class="card-title" >{{$receta->nombre}}</h5>
                 </div>
             </div>
-            </div>
-            <br>
+            <br><br>
 
             <h5 class="card-title">Edad del niño</h5>
             <div class="card w-25" >

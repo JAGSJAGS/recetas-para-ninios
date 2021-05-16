@@ -19,18 +19,19 @@
                 <div class="col-sm-10">
                   <input class="form-control" name="Nombre" value="{{$receta->nombre}}" required rows="1" minlength="5" maxlength="40">
                 </div>
-              </div><br><br>
-              <div class="">
+              </div>
+              
+              <div class="row mb-3">
                 <label for="formFileSm" class="form-label">
-                  <div class="card bg-primary text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""...">
+                  <div class="card bg-light border border-light text-black">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
                     <div class="card-img-overlay">
                     <h5 class="card-title" ></h5>
                     </div>
                   </div>
                 </label>
                 <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file" accept='image/*' >
-              </div><br><br>
+              </div><br>
 
             
             <div class="row mb-3">

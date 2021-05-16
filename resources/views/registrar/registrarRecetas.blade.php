@@ -32,6 +32,7 @@
       
       <div class="mb-4">
         <label for="formFileSm" class="form-label"><a><img class="container w-50" src="icons/agregarImagen.png" width="”10”" width="50%" height="50%"></a></label>
+
         <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file" accept='image/*'  value="{{old('imagen')}}">
       </div><br><br>
       
@@ -48,8 +49,9 @@
         <div class="col-sm-9">
           <input class="form-control" name="Edad" rows="1"   value="{{ old('Edad') }}">
         </div>
-      </div>
+
       <div class="row mb-3">
+
         <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes Alternativos:</label>
         <div class="col-sm-1"></div>
         <div class="col-sm-9">
@@ -60,8 +62,7 @@
         <label for="inputPassword3" class="col-sm-3 col-form-label">Pasos:</label>
         <div class="col-sm-9">
           <textarea class="form-control" name="Pasos" rows="8" >{{ old("Pasos") }} </textarea>
-        </div>
-      </div><br>
+        </div><br>
       
       <div class="row mb-3">
         <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Retornar Inicio</a></div>
