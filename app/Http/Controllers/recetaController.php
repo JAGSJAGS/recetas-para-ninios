@@ -16,7 +16,7 @@ class recetaController extends Controller
     {
         $this->validate(request(),[
             'Nombre' => ['required' , 'max:40' , ],
-            'imagen' => ['required', 'size:5  kilobytes'  ],
+            'imagen' => ['required', 'size: 100 '  ],
             'Ingredientes' =>['required', 'max:1000'  ],
             'Edad' =>['required', 'max:5' ],
             'IngredientesAlternativos' =>['max:1000'  ],
