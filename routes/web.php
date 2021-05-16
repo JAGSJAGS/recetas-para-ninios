@@ -34,3 +34,9 @@ Route::post('/','homeController@buscar')->middleware('auth');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get('/Index','homeController@index2')->name('indexUser')->middleware('guest');
+Route::get('/UReceta/{id}','verRecetaController@show2')->middleware('guest');
+Route::post('/Index','homeController@buscar2')->middleware('guest');
