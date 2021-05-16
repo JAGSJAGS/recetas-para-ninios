@@ -13,10 +13,12 @@
     margin: 0px;  
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper3.jpg) 
 }
+
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;

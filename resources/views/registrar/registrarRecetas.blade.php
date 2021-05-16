@@ -2,14 +2,14 @@
 @section('content')
 <br>
 <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>Registrar Recetas</h1></div>
-  <div class="container-md container-inline bg-light w-50 "id="layer1">
+  <div class="container-md container-inline w-50 "id="layer1">
     <br><br>
 
    @if(session('mensaje'))
-    <div class="alert alert-success" role="alert" style="background-color: #585858;"><h4><FONT COLOR="white">Registro Exitoso</h4> </div>
+    <div class="alert alert-success" role="alert" style="background-color: #585858;"><h4><FONT COLOR="white">Registro Exitoso</FONT></h4> </div>
    @endif
 
-      <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
+      <form class="container w-75" method="POST" action="Registrar" enctype="multipart/form-data">
       @csrf
 
       <div class="row mb-3">

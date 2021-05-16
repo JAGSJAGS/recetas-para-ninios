@@ -81,13 +81,15 @@ thead{
     text-align: center;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper3.jpg) 
 }
+
 .main{
-    background-color: #ffffff;
 }
+
 #layer1{
-    background-color: #ffdfdf;
+    background:none;
     
 }
 #header{ 
@@ -130,8 +132,6 @@ ul, ol {
 .main h1{
   text-align: center;
 }
-
-
 
     </style>
 </head>

@@ -3,14 +3,14 @@
 <br>
       <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
 
-        <div class="container-md container-inline bg-light w-50">
+        <div class="container-md container-inline w-50">
 
           <br><br>
           @if(session('mensaje'))
           <div class="alert alert-dark" role="alert"><h4>Actualización Exitosa</h4> </div>
          @endif
 
-            <form class="container w-75 " method="POST" action="/Receta/{{$receta->id}}" enctype="multipart/form-data">
+            <form class="container w-75" method="POST" action="/Receta/{{$receta->id}}" enctype="multipart/form-data">
             <input type="hidden" name="_method" value="PUT">
             @csrf
 
@@ -23,7 +23,7 @@
               
               <div class="row mb-3">
                 <label for="formFileSm" class="form-label">
-                  <div class="card bg-light border border-light text-black">
+                  <div class="card">
                     <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
                     <div class="card-img-overlay">
                     <h5 class="card-title" ></h5>

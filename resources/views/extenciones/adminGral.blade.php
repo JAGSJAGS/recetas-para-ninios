@@ -15,8 +15,6 @@
 .login-box {
     width: 420px;
     height: 440px;
-    background: rgb(230,230, 250);
-    
 
     margin: 100px auto;
 }
@@ -41,12 +39,10 @@
 
 .login-box input[type="text"],
 .login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: #fff;
+    background: #none;
     outline: none;
-    height: 30px;
-    color: #000000;
+    height: 50px;
+    color: #000;
     font-size: 20px;
 }
 
@@ -60,13 +56,14 @@
     border-radius: 20px;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper3.jpg) 
+    
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
-    background-color: #ffdfdf;
     color:#000000;
 }
 #header{ 
@@ -110,7 +107,13 @@ ul, ol {
   text-align: center;
 }
 
-
+.card {
+    background: none;
+    border: none;
+}
+.card p[class="card-text"]{
+    background: #fff;
+}
 
     </style>
 </head>
