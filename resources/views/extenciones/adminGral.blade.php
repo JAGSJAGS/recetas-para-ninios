@@ -67,7 +67,7 @@
 }
 #layer1{
     background-color: #ffdfdf;
-    
+    color:#000000;
 }
 #header{ 
     

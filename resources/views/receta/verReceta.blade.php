@@ -5,14 +5,18 @@
 
 <div class="container-md container-inline bg-light w-50">
 <br><br>
+
 <form class="container w-75 ">
-            <div class="card bg-primary text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta">
+<div class="row mb-3">
+            <div class="card bg-light border border-light text-black">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
+
                 <div class="card-img-overlay">
-                     <h5 class="card-title" >{{$receta->nombre}}</h5>
+                     
                 </div>
             </div>
-            <br><br>
+            </div>
+            <br>
 
             <h5 class="card-title">Edad del niño</h5>
             <div class="card w-25" >
