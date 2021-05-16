@@ -33,10 +33,11 @@ Route::post('/IndexAdmin','homeController@buscar')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'homeController@index')->name('home');
 
 
 
 Route::get('/','homeController@index2')->name('indexUser')->middleware('guest');
 Route::get('/UReceta/{id}','verRecetaController@show2')->middleware('guest');
 Route::post('/','homeController@buscar2')->middleware('guest');
+Auth::routes();
