@@ -43,26 +43,28 @@
           <textarea class="form-control" name="Ingredientes" rows="4">{{ old('Ingredientes') }} </textarea>
         </div>
       </div>
+
       <div class="row mb-3">
         <label for="inputPassword3" class="col-sm-2 col-form-label">Edad(maximo 3 años):</label>
         <div class="col-sm-1"></div>
         <div class="col-sm-9">
           <input class="form-control" name="Edad" rows="1"   value="{{ old('Edad') }}">
-        </div>
+      </div>
 
       <div class="row mb-3">
-
         <label for="inputPassword3" class="col-sm-2 col-form-label">Ingredientes Alternativos:</label>
         <div class="col-sm-1"></div>
         <div class="col-sm-9">
           <textarea class="form-control" name="IngredientesAlternativos" rows="4">{{ old('IngredientesAlternativos') }} </textarea>
         </div>
       </div>
+
       <div class="row mb-3">
         <label for="inputPassword3" class="col-sm-3 col-form-label">Pasos:</label>
         <div class="col-sm-9">
           <textarea class="form-control" name="Pasos" rows="8" >{{ old("Pasos") }} </textarea>
-        </div><br>
+        </div>
+      </div>
       
       <div class="row mb-3">
         <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Retornar Inicio</a></div>
@@ -73,5 +75,5 @@
       
     </form><br>
   
-  </div><br><br>
+  </div><br>
   @endsection
