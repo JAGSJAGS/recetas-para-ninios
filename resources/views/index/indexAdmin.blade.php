@@ -16,7 +16,7 @@
         @foreach($recetas as $receta)
           <div class="col">
             <div class="card h-100 border border-dark">
-            <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; max-height: 90%;"></a>
+            <a href="/Receta/{{$receta->id}}"><img src="images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;"></a>
               <div class="card-body">
                 <h5 class="card-title">{{$receta->nombre}}</h5>
               </div>

@@ -1,8 +1,6 @@
-@extends('extenciones.usuario')
+@extends('extenciones.adminGral')
 @section('content')
-<br>
-<br>
-<br>     
+ 
 <div class="login-box">
    <h1>BIENVENIDO</h1>
 <form>

@@ -1,9 +1,9 @@
 @extends('extenciones.adminGral')
 @section('content')
 <br>
-      <div class="container w-25 center"><h2>Editar Receta</h2></div><br>
+      <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
 
-        <div class="container-md container-inline bg-light w-50 border border-success">
+        <div class="container-md container-inline bg-light w-50">
 
           <br><br>
           @if(session('mensaje'))
