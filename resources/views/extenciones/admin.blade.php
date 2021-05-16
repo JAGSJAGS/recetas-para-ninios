@@ -169,7 +169,7 @@ ul, ol {
               </div>
       </nav>
 
-      <div><FONT COLOR="white">Administrador</FONT><br><a href="/IniciarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
+      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
         </div>
       </nav>
 

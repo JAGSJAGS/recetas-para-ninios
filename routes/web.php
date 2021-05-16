@@ -16,16 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/fda', function () {
     return view('registrar.registrarRecetas');
 });
-Route::get('/','homeController@index');
-Route::get('Registrar','recetaController@index');//muestra formulario de registrar receta
-Route::post('Registrar','recetaController@registrar');//registra receta
-Route::get('/Receta/{id}','verRecetaController@show');//muestra receta
-Route::get('/Recetas','listaController@listar');//listar receta
-Route::get('/Recetas/{id}/editar','recetaController@editar');//mostrar formulario para editar
+Route::get('/','homeController@index')->name('indexAdmin')->middleware('auth');
+Route::get('Registrar','recetaController@index')->middleware('auth');//muestra formulario de registrar receta
+Route::post('Registrar','recetaController@registrar')->middleware('auth');//registra receta
+Route::get('/Receta/{id}','verRecetaController@show')->middleware('auth');//muestra receta
+Route::get('/Recetas','listaController@listar')->middleware('auth');//listar receta
+Route::get('/Recetas/{id}/editar','recetaController@editar')->middleware('auth');//mostrar formulario para editar
 
-Route::get('IniciarSeción','loginController@index');//login index
-Route::post('IniciarSeción','loginController@login')->name('login');
+Route::get('IniciarSeción','loginController@index')->name('indexlog')->middleware('guest');//login index
+Route::post('IniciarSeción','loginController@login')->name('logear');
+Route::get('CerrarSeción','loginController@logout')->name('cerrar')->middleware('auth');
 
-Route::put('/Receta/{id}','recetaController@actualizar');//ruta para actualizar
-Route::post('/','homeController@buscar');
+Route::put('/Receta/{id}','recetaController@actualizar')->middleware('auth');//ruta para actualizar
+Route::post('/','homeController@buscar')->middleware('auth');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

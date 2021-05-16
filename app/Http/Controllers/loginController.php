@@ -14,13 +14,17 @@ class loginController extends Controller
     }
 
     public function login(Request $request){
-        $credenciales = $this->validate(request(),['Usuario'=>'required',
-                                    'Contraseña'=>'required']);
-        $usuario = Usuario::where('nombre', $request->input('Usuario'))->where('telefono', $request->input('Contraseña'))->get();
+        $credenciales = $this->validate(request(),['email'=>'email|required|string','password'=>'required']);
+        //$usuario = Usuario::where('nombre', $request->input('Usuario'))->get();
         //dd(count($usuario));
-        if(count($usuario)>0){
-            return 'logeado';
+        if(Auth::attempt($credenciales)){
+            return redirect()->route('indexAdmin');
         }
         return back();
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect()->route('indexlog');
     }
 }
