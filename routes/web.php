@@ -33,7 +33,7 @@ Route::post('/IndexAdmin','homeController@buscar')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', 'homeController@index')->name('home');
+Route::get('/home', 'homeController@index')->name('home')->middleware('auth');
 
 
 
