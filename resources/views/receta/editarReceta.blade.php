@@ -1,8 +1,18 @@
 @extends('extenciones.adminGral')
 @section('content')
 <br>
-      <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
 
+      <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
+      @if(!$errors->isEmpty())
+      <div class="alert alert-danger">
+        <p><strong>Oops!</strong> Por favor arregle los errores</p>
+        <ul>
+        @foreach ($errors->all() as $error)
+          <li>{{($error)}}</li>  
+        @endforeach
+      </div>
+    
+    @endif 
         <div class="container-md container-inline bg-light w-50">
 
           <br><br>
@@ -17,7 +27,7 @@
             <div class="row mb-3">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
                 <div class="col-sm-10">
-                  <input class="form-control" name="Nombre" value="{{$receta->nombre}}" required rows="1" minlength="5" maxlength="40">
+                  <input class="form-control" name="Nombre" value="{{$receta->nombre}}" rows="1" minlength="5" maxlength="40">
                 </div>
               </div>
               
@@ -36,12 +46,12 @@
             
             <div class="row mb-3">
              <label for="inputPassword3">Edad(maximo 3 años):</label>
-             <p><input class="form-control" name="Edad" rows="1" value="{{$receta->edad}}" required pattern="[1-3]+"  minlength="1" maxlength="1"></p>
+             <p><input class="form-control" name="Edad" rows="1" value="{{$receta->edad}}"  minlength="1" maxlength="1"></p>
             </div>
 
             <div class="row mb-3">
               <label for="inputPassword3" >Ingredientes:</label>
-                <p><textarea class="form-control" name="Ingredientes" rows="10" required minlength="5" maxlength="1000">{{$receta->ingredientes}}</textarea></p>
+                <p><textarea class="form-control" name="Ingredientes" rows="10" minlength="5" maxlength="1000">{{$receta->ingredientes}}</textarea></p>
             </div>
 
             <div class="row mb-3">
@@ -51,7 +61,7 @@
 
             <div class="row mb-3">
               <label for="inputPassword3" >Pasos:</label>
-              <p><textarea class="form-control" name="Pasos" rows="10" required minlength="5" maxlength="3000">{{$receta->pasos}}</textarea></p>
+              <p><textarea class="form-control" name="Pasos" rows="10"  minlength="5" maxlength="3000">{{$receta->pasos}}</textarea></p>
             </div><br>
             
             <div class="row mb-3">
