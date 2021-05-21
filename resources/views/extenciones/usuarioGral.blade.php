@@ -13,10 +13,11 @@
     margin: 0px;  
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;
@@ -62,7 +63,21 @@ ul, ol {
 .main h1{
   text-align: center;
 }
+.card{
+    background:none;
+    border:none;
 
+}
+
+.card p[class="card-text"]{
+    background:#fff;   
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.container-md{
+    background:rgba(255, 255, 255, 0.7);
+}
 
 
     </style>

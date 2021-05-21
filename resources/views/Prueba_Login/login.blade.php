@@ -81,10 +81,11 @@ thead{
     text-align: center;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;
@@ -149,9 +150,9 @@ ul, ol {
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">Iniciar Seción</div>
+                        <div class="card-header">Iniciar Sesión</div>
 
-                        <div class="card-body"><br>
+                        <div class="card-body">
                             <form method="POST" action="{{ route('logear') }}">
                                 @csrf
 
@@ -186,7 +187,7 @@ ul, ol {
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8 offset-md-4">
                                         <button type="submit" class="btn btn-dark">
-                                            Iniciar Seción
+                                            Iniciar Sesión
                                         </button>
                                     </div>
                                 </div>

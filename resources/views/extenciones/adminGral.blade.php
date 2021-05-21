@@ -60,10 +60,11 @@
     border-radius: 20px;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;
@@ -110,6 +111,21 @@ ul, ol {
   text-align: center;
 }
 
+.card{
+    background:none;
+    border:none;
+
+}
+
+.card p[class="card-text"]{
+    background:#fff;   
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.container-md{
+    background:rgba(255, 255, 255, 0.8);
+}
 
 
     </style>
@@ -133,7 +149,7 @@ ul, ol {
         </div>
 
 
-      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
+      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Sesión</FONT></a></div>
         </div>
       </nav>
 
