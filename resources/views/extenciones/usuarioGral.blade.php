@@ -72,15 +72,10 @@ ul, ol {
     <nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
-          <div>
+        <div>
           <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
-            <ul class ="nav">
-               <li><a href="#">Menú</a>             
-                   <ul>
-                       <li><a href="/">Inicio</a> </li>                     
-                  </ul> 
-               </li>  
-            </ul>
+          
+          <! –– se elimino menu ––>
         </div>
 
         </div>

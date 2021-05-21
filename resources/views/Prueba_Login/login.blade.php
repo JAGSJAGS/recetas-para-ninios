@@ -149,7 +149,7 @@ ul, ol {
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">Iniciar Seción</div>
+                        <div class="card-header">Iniciar Sesión</div>
 
                         <div class="card-body"><br>
                             <form method="POST" action="{{ route('logear') }}">
@@ -186,7 +186,7 @@ ul, ol {
                                 <div class="form-group row mb-0">
                                     <div class="col-md-8 offset-md-4">
                                         <button type="submit" class="btn btn-dark">
-                                            Iniciar Seción
+                                            Iniciar Sesión
                                         </button>
                                     </div>
                                 </div>
