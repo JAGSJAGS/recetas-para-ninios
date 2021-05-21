@@ -15,7 +15,7 @@ class recetaController extends Controller
     public function registrar(Request $request)
     {
         $this->validate(request(),[
-            'Nombre' => ['required' ,'max:40','alpha' ],
+            'Nombre' => ['required' ,'max:40', 'regex:/^[\pL\s\-]+$/u'],
             'imagen' => ['required', 'file:4096','image' ],
             'Ingredientes' =>['required', 'max:1000'  ],
             'Edad' =>['required', 'numeric'],
@@ -54,7 +54,7 @@ class recetaController extends Controller
     public function actualizar($id,Request $request)
     {
         $this->validate(request(),[
-            'Nombre' => ['required' ,'max:40','alpha' ],
+            'Nombre' => ['required' ,'max:40', 'regex:/^[\pL\s\-]+$/u'],
             'imagen' => [ 'file:4096','image' ],
             'Ingredientes' =>['required', 'max:1000'  ],
             'Edad' =>['required', 'numeric'],

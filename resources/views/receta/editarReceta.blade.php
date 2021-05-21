@@ -27,7 +27,7 @@
             <div class="row mb-3">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre:</label>
                 <div class="col-sm-10">
-                  <input class="form-control" name="Nombre" value="{{$receta->nombre}}" rows="1" minlength="5" maxlength="40">
+                  <input class="form-control" name="Nombre"  value="{{$receta->nombre}}" rows="1" minlength="5" maxlength="40">
                 </div>
               </div>
               
