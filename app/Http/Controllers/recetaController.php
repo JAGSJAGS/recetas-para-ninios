@@ -15,13 +15,19 @@ class recetaController extends Controller
     public function registrar(Request $request)
     {
         $this->validate(request(),[
+<<<<<<< HEAD
             'Nombre' => ['required' , 'max:40' , ],
             'imagen' => ['required',],
+=======
+            'Nombre' => ['required' ,'max:40','alpha' ],
+            'imagen' => ['required', 'file:4096','image' ],
+>>>>>>> ffba8479e7496bd89f93e71ef95bb40c05a6e24a
             'Ingredientes' =>['required', 'max:1000'  ],
-            'Edad' =>['required', 'max:5' ],
-            'IngredientesAlternativos' =>['max:1000'  ],
-            'Pasos' =>['required', 'max:3000'   ]
+            'Edad' =>['required', 'numeric'],
+            'IngredientesAlternativos' =>['max:1000'],
+            'Pasos' =>['required', 'max:3000' ]
         ]);
+        
         
         if($request->hasFile('imagen')){
             $validatedData = $request->validate([
@@ -52,6 +58,15 @@ class recetaController extends Controller
 
     public function actualizar($id,Request $request)
     {
+        $this->validate(request(),[
+            'Nombre' => ['required' ,'max:40','alpha' ],
+            'imagen' => [ 'file:4096','image' ],
+            'Ingredientes' =>['required', 'max:1000'  ],
+            'Edad' =>['required', 'numeric'],
+            'IngredientesAlternativos' =>['max:1000'],
+            'Pasos' =>['required', 'max:3000' ]
+        ]);
+
         $receta = Receta::find($id);
         $name = $receta->ruta_imagen;
 

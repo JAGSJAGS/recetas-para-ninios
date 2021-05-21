@@ -8,14 +8,13 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Modificar</th>
-                        <th>Eliminar</th>
+                        
                     </tr>
                 </thead>
                 @foreach($recetas as $receta)
                 <tr>
                     <td>{{$receta->nombre}}</td>
                     <td><a href="/Recetas/{{$receta->id}}/editar" type="submit" class="btn btn-dark">Editar Receta</a></td>
-                    <td><a href="" type="submit" class="btn btn-danger">Eliminar Receta</a></td>
                 </tr>
                 @endforeach
             </table>
