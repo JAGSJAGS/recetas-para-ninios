@@ -126,6 +126,9 @@ ul, ol {
 .container-md{
     background:rgba(255, 255, 255, 0.8);
 }
+textarea{
+    resize:none;
+}
 
 
     </style>

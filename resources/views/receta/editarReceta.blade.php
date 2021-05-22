@@ -1,5 +1,6 @@
 @extends('extenciones.adminGral')
 @section('content')
+
 <br>
 
       <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
