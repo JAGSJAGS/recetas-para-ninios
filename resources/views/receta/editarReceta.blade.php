@@ -1,5 +1,6 @@
 @extends('extenciones.adminGral')
 @section('content')
+
 <br>
 
       <div class="container w-25 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Editar Receta</h1></div>
@@ -13,7 +14,7 @@
       </div>
     
     @endif 
-        <div class="container-md container-inline bg-light w-50">
+        <div class="container-md container-inline w-50">
 
           <br><br>
           @if(session('mensaje'))
@@ -33,8 +34,8 @@
               
               <div class="row mb-3">
                 <label for="formFileSm" class="form-label">
-                  <div class="card bg-light border border-light text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
+                  <div class="card">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:30vh; width: 30vh; margin: auto;">
                     <div class="card-img-overlay">
                     <h5 class="card-title" ></h5>
                     </div>
@@ -43,15 +44,14 @@
                 <input class="form-control form-control-sm" name="imagen" id="formFileSm" type="file" accept='image/*' >
               </div><br>
 
+              <div class="row mb-3">
+              <label for="inputPassword3" >Ingredientes:</label>
+                <p><textarea class="form-control" name="Ingredientes" rows="10" minlength="5" maxlength="1000">{{$receta->ingredientes}}</textarea></p>
+            </div>
             
             <div class="row mb-3">
              <label for="inputPassword3">Edad(maximo 3 años):</label>
              <p><input class="form-control" name="Edad" rows="1" value="{{$receta->edad}}"  minlength="1" maxlength="1"></p>
-            </div>
-
-            <div class="row mb-3">
-              <label for="inputPassword3" >Ingredientes:</label>
-                <p><textarea class="form-control" name="Ingredientes" rows="10" minlength="5" maxlength="1000">{{$receta->ingredientes}}</textarea></p>
             </div>
 
             <div class="row mb-3">

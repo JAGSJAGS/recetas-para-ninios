@@ -13,15 +13,18 @@
     margin: 0px;  
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+ 
 }
 #layer1{
-    background-color: #ffdfdf;
-    
+    background-color: rgba(255, 220, 220,0.6);
+    width:75%;
+    height:60vh;  
 }
+
 #header{ 
     
     width: 1000px;

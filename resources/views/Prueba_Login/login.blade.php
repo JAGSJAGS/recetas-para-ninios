@@ -81,10 +81,11 @@ thead{
     text-align: center;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;
@@ -151,7 +152,7 @@ ul, ol {
                     <div class="card">
                         <div class="card-header">Iniciar Sesión</div>
 
-                        <div class="card-body"><br>
+                        <div class="card-body">
                             <form method="POST" action="{{ route('logear') }}">
                                 @csrf
 
