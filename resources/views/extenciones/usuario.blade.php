@@ -79,7 +79,7 @@ ul, ol {
           <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
           <! –– se elimino menu ––>
           
-        </div>
+        </div><br><br><br>
 
 
 
