@@ -77,13 +77,8 @@ ul, ol {
           
           <div>
           <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
-            <ul class ="nav">
-               <li><a href="#">Menú</a>             
-                   <ul>
-                       <li><a href="/">Inicio</a> </li>                     
-                  </ul> 
-               </li>  
-            </ul>
+          <! –– se elimino menu ––>
+          
         </div>
 
 
