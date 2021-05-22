@@ -3,13 +3,13 @@
 <br>
         <div class="container w-50 center "style = "font-family:Brush Script MT,arial,helvética;"><h1>{{$receta->nombre}}</h1></div>
 
-<div class="container-md container-inline bg-light w-50">
+<div class="container-md container-inline w-50">
 <br><br>
 
 <form class="container w-75 ">
 <div class="row mb-3">
-            <div class="card bg-light border border-light text-black">
-                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:40vh; width: 40vh; margin: auto;">
+            <div class="card">
+                    <img src="/images/{{$receta->ruta_imagen}}" class="card-img" alt="Imagen de Receta""..." style="height:30vh; width: 30vh; margin: auto;">
 
                 <div class="card-img-overlay">
                      
@@ -48,7 +48,7 @@
                     </div>
             </div>
 <br>   
-                    <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Retornar</a></div>
+                    <div class="col-sm-9"><a type="submit" class="btn btn-danger"  href="/">Volver Inicio</a></div>
                     </form><br>
 
  </div><br><br>
