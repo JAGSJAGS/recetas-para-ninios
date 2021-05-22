@@ -13,10 +13,11 @@
     margin: 0px;  
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
     background-color: #ffdfdf;
@@ -62,7 +63,21 @@ ul, ol {
 .main h1{
   text-align: center;
 }
+.card{
+    background:none;
+    border:none;
 
+}
+
+.card p[class="card-text"]{
+    background:#fff;   
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.container-md{
+    background:rgba(255, 255, 255, 0.7);
+}
 
 
     </style>
@@ -72,16 +87,11 @@ ul, ol {
     <nav class="navbar navbar-light" style="background-color: #DC143C;">
         <div class="container-fluid">
           
-          <div>
+        <div>
           <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
-            <ul class ="nav">
-               <li><a href="#">Menú</a>             
-                   <ul>
-                       <li><a href="/">Inicio</a> </li>                     
-                  </ul> 
-               </li>  
-            </ul>
-        </div>
+          
+          <! –– se elimino menu ––>
+        </div><br><br><br>
 
         </div>
       </nav>

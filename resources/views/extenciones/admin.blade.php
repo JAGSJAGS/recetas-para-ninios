@@ -81,13 +81,16 @@ thead{
     text-align: center;
 }
 .body{
-    background-color: #ffffff;
+    min-height: 100vh;
+    background: url(/images/wallpaper1.jpg)
 }
 .main{
-    background-color: #ffffff;
+
 }
 #layer1{
-    background-color: #ffdfdf;
+    background-color: rgba(255, 220, 220,0.6);
+    width:75%;
+    height:60vh;
     
 }
 #header{ 
@@ -169,7 +172,7 @@ ul, ol {
               </div>
       </nav>
 
-      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Seción</FONT></a></div>
+      <div><FONT COLOR="white">{{ Auth::user()->name }}</FONT><br><a href="/CerrarSeción"><FONT COLOR="white">Cerrar Sesión</FONT></a></div>
         </div>
       </nav>
 

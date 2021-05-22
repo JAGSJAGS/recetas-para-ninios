@@ -11,7 +11,7 @@
 <br>
         <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Recetas Saludables Para Niños</h1></div>
         
-        <div class="container-md container-inline w-75  " id="layer1" style="height:450px; overflow-y: scroll;"><br>
+        <div class="container-md container-inline" id="layer1" style="overflow-y: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-4 g-4">
         @foreach($recetas as $receta)
           <div class="col">
