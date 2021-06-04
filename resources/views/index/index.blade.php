@@ -8,6 +8,58 @@
 
 
 
+<! –– inicio cambios filtro para recetas ––>
+
+
+Busqueda Por Filtros
+
+
+<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Edad
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="#">1 año</a></li>
+      <li><a class="dropdown-item" href="#">2 años</a></li>
+      <li><a class="dropdown-item" href="#">3 años</a></li>
+    </ul>
+  </div>
+
+
+<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Calorias
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="#">100 calorias</a></li>
+      <li><a class="dropdown-item" href="#">200 calorias</a></li>
+      <li><a class="dropdown-item" href="#">300 calorias</a></li>
+      <li><a class="dropdown-item" href="#">400 calorias</a></li>
+      <li><a class="dropdown-item" href="#">500 calorias</a></li>
+    </ul>
+  </div>
+  
+
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Tipo De Comida
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="#">Desayuno</a></li>
+      <li><a class="dropdown-item" href="#">Almuerzo</a></li>
+      <li><a class="dropdown-item" href="#">Cena</a></li>
+      <li><a class="dropdown-item" href="#">Postre</a></li>
+    </ul>
+  </div>
+
+
+<! –– fin cambios filtro para recetas ––>
+
+
+
+
+
 <br>
         <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Recetas Saludables Para Niños</h1></div>
         
@@ -25,4 +77,7 @@
         @endforeach
         </div> <br>         
         </div><br>
+    
+
+
 @endsection

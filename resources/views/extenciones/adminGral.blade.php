@@ -145,7 +145,7 @@ textarea{
                    <ul>
                        <li><a href="/IndexAdmin">Inicio</a> </li>
                        <li><a href="/Recetas">Lista de Recetas</a> </li>
-                       <li><a href="/Registrar">Registrar Receta</a> </li>                      
+                       <li><a href="/Registrar">Registrar Receta</a> </li>                    
                   </ul> 
                </li>  
             </ul>
