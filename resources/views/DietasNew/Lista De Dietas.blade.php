@@ -1,5 +1,4 @@
-@extends('extenciones.usuario')
-
+@extends('extenciones.usuarioGral')
 @section('content')
 
 <h5 class="card-title">(Lista) Sugerencia De Dietas</h5>
