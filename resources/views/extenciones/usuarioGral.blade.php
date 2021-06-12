@@ -90,7 +90,14 @@ ul, ol {
         <div>
           <a class="navbar-brand" href="/"><FONT COLOR="white">INICIO</FONT></a> 
           
-          <! –– se elimino menu ––>
+          <ul class ="nav">
+               <li><a href="#">Menú</a>             
+                   <ul>
+                       <li><a href="/Evaluacion">Evaluación Alimenticia</a> </li>
+                       <li><a href="/Dietas">Dietas</a> </li>                  
+                  </ul> 
+               </li>  
+            </ul>
         </div><br><br><br>
 
         </div>

@@ -40,4 +40,11 @@ Route::get('/home', 'homeController@index')->name('home')->middleware('auth');
 Route::get('/','homeController@index2')->name('indexUser')->middleware('guest');
 Route::get('/UReceta/{id}','verRecetaController@show2')->middleware('guest');
 Route::post('/','homeController@buscar2')->middleware('guest');
+
+Route::get('/Evaluacion','evaluacionConroller@index')->middleware('guest');
+Route::get('/Dietas','dietasController@index')->middleware('guest');
+Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
+Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
 Auth::routes();
+
+
