@@ -42,6 +42,8 @@ Route::get('/UReceta/{id}','verRecetaController@show2')->middleware('guest');
 Route::post('/','homeController@buscar2')->middleware('guest');
 
 Route::get('/Evaluacion','evaluacionConroller@index')->middleware('guest');
+Route::post('/Evaluacion','evaluacionConroller@Calcular')->middleware('guest');
+
 Route::get('/Dietas','dietasController@index')->middleware('guest');
 Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
 Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
