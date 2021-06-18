@@ -9,56 +9,63 @@
 
 
 <! –– inicio cambios filtro para recetas ––>
+<div class="container">
+  <div class="row justify-content-center mt-7 pt-7">
+      <form>
+        <div class="row form-group">
 
+          <div class="col-md-2">
+          <br>
+            <h5>Busqueda Por Filtros:</h5>
+          </div>
 
-Busqueda Por Filtros
+          <div class="col-md-2">
+            <label for="edad" class="col-form-label" required></label>
+              <select class="form-control">
+                  <option selected>Edad</option>
+                  <option value="1">1 año</option>
+                  <option value="2">2 años</option>
+                  <option value="3">3 años</option>
+              </select>              
+          </div>
+          
+          <div class="col-md-2">
+            <label for="calorias" class="col-form-label" required></label>
+              <select class="form-control">
+                  <option selected>Calorias</option>
+                  <option value="1">100-200 cal</option>
+                  <option value="2">200-300 cal</option>
+                  <option value="3">300-400 cal</option>
+                  <option value="4">+400 cal</option>
+              </select>
+          </div>
 
+          <div class="col-md-2">
+            <label for="tipo" class="col-form-label" required></label>
+              <select class="form-control">
+                  <option selected>Tipo de Comida</option>
+                  <option value="1">Desayuno</option>
+                  <option value="2">Almuerzo</option>
+                  <option value="3">Cena</option>
+              </select>
+          </div>
 
-<div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Edad
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <li><a class="dropdown-item" href="#">1 año</a></li>
-      <li><a class="dropdown-item" href="#">2 años</a></li>
-      <li><a class="dropdown-item" href="#">3 años</a></li>
-    </ul>
-  </div>
+          <div class="col-md-2">
+          <br>
+            <button type="submit" class="btn btn-outline-dark">Filtrar</button> 
+          </div>
 
+          <div class="col-md-2">
+          <br>
+            <button type="submit" class="btn btn-outline-danger">Cancelar</button> 
+          </div>  
 
-<div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Calorias
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <li><a class="dropdown-item" href="#">100 calorias</a></li>
-      <li><a class="dropdown-item" href="#">200 calorias</a></li>
-      <li><a class="dropdown-item" href="#">300 calorias</a></li>
-      <li><a class="dropdown-item" href="#">400 calorias</a></li>
-      <li><a class="dropdown-item" href="#">500 calorias</a></li>
-    </ul>
-  </div>
-  
-
-
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Tipo De Comida
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <li><a class="dropdown-item" href="#">Desayuno</a></li>
-      <li><a class="dropdown-item" href="#">Almuerzo</a></li>
-      <li><a class="dropdown-item" href="#">Cena</a></li>
-      <li><a class="dropdown-item" href="#">Postre</a></li>
-    </ul>
-  </div>
-
+        </div>             
+      </form>
+  </div>            
+</div>
 
 <! –– fin cambios filtro para recetas ––>
-
-
-
-
 
 <br>
         <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Recetas Saludables Para Niños</h1></div>
@@ -77,7 +84,5 @@ Busqueda Por Filtros
         @endforeach
         </div> <br>         
         </div><br>
-    
-
 
 @endsection
