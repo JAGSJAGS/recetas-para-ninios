@@ -4,12 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Dieta extends Model
+class DietaReceta extends Model
 {
-    protected $table='dieta';
+    protected $table='dietaReceta';
     protected $fillable = [
         'id',
-        'name'
+        'name',
+        'receta_id',
+        'dieta_id',
+        'dia'
     ];
     protected $guarded = ['id'];
     protected $primaryKey = 'id';
