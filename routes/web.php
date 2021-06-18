@@ -47,6 +47,8 @@ Route::post('/Evaluacion','evaluacionConroller@Calcular')->middleware('guest');
 Route::get('/Dietas','dietasController@index')->middleware('guest');
 Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
 Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
+
+Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
 Auth::routes();
 
 

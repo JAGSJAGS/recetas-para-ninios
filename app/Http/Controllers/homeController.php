@@ -33,6 +33,13 @@ class HomeController extends Controller
         //$recetas = Receta::all();
         return view('index.index',compact('recetas','recetas2'));
     }
+    public function filtrar(Request $request)
+    {
+        $recetas2 = Receta::all();
+        $recetas = Receta::all();
+        //$recetas = Receta::all();
+        return view('index.index',compact('recetas','recetas2'));
+    }
     /**public function __construct()
     {
         $this->middleware('auth');

@@ -11,7 +11,8 @@
 <! –– inicio cambios filtro para recetas ––>
 <div class="container">
   <div class="row justify-content-center mt-7 pt-7">
-      <form>
+      <form class="" method="POST" action="/Filtrar" enctype="multipart/form-data">
+        @csrf
         <div class="row form-group">
 
           <div class="col-md-2">
