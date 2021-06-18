@@ -6,19 +6,14 @@
 <div class="container-md container-inline w-50">
     <br><br> 
     @if(!$errors->isEmpty())
-  <div class="alert alert-danger">
-    <p><strong>Oops!</strong> Por favor arregle los errores</p>
-    <ul>
-    @foreach ($errors->all() as $error)
-      <li>{{($error)}}</li>  
-    @endforeach
-  </div>
-
-@endif  
-   @if(session('mensaje'))
-    <div class="alert alert-success" role="alert" style="background-color: #585858;"><h4><FONT COLOR="white">Registro Exitoso</FONT></h4> </div>
-   @endif
-
+         <div class="alert alert-danger">
+         <p><strong>Oops!</strong> Por favor arregle los errores</p>
+         <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{($error)}}</li>  
+          @endforeach
+         </div>
+    @endif  
       <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
       @csrf
 
