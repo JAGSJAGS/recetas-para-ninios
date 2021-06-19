@@ -11,7 +11,8 @@
 <! –– inicio cambios filtro para recetas ––>
 <div class="container">
   <div class="row justify-content-center mt-7 pt-7">
-      <form>
+      <form class="" method="POST" action="/Filtrar" enctype="multipart/form-data">
+        @csrf
         <div class="row form-group">
 
           <div class="col-md-2">
@@ -20,8 +21,8 @@
           </div>
 
           <div class="col-md-2">
-            <label for="edad" class="col-form-label" required></label>
-              <select class="form-control">
+            <label for="Edad" class="col-form-label" required></label>
+              <select name="Edad" class="form-control">
                   <option selected>Edad</option>
                   <option value="1">1 año</option>
                   <option value="2">2 años</option>
@@ -30,29 +31,29 @@
           </div>
           
           <div class="col-md-2">
-            <label for="calorias" class="col-form-label" required></label>
-              <select class="form-control">
+            <label for="Calorias" class="col-form-label" required></label>
+              <select name="Calorias" class="form-control">
                   <option selected>Calorias</option>
-                  <option value="1">100-200 cal</option>
-                  <option value="2">200-300 cal</option>
-                  <option value="3">300-400 cal</option>
-                  <option value="4">+400 cal</option>
+                  <option value="100-200 cal">100-200 cal</option>
+                  <option value="200-300 cal">200-300 cal</option>
+                  <option value="300-400 cal">300-400 cal</option>
+                  <option value="+400 cal">+400 cal</option>
               </select>
           </div>
 
           <div class="col-md-2">
-            <label for="tipo" class="col-form-label" required></label>
-              <select class="form-control">
+            <label for="Tipo" class="col-form-label" required></label>
+              <select name="Tipo" class="form-control">
                   <option selected>Tipo de Comida</option>
-                  <option value="1">Desayuno</option>
-                  <option value="2">Almuerzo</option>
-                  <option value="3">Cena</option>
+                  <option value="Desayuno">Desayuno</option>
+                  <option value="Almuerzo">Almuerzo</option>
+                  <option value="Cena">Cena</option>
               </select>
           </div>
 
           <div class="col-md-2">
           <br>
-            <button type="submit" class="btn btn-outline-dark">Filtrar</button> 
+            <button id="btnSubmit" class="btn btn-dark form-control" type="submit">Filtrar</button>
           </div>
 
           <div class="col-md-2">
