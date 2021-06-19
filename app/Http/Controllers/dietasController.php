@@ -14,4 +14,8 @@ class dietasController extends Controller
     {
         return view('visualizarDietas.visualizaDietas');
     }
+    public function indexAdmin()
+    {
+        return view('visualizarDietas.visualizaDietas');
+    }
 }
