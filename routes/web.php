@@ -49,6 +49,11 @@ Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
 Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
 
 Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
+
+
+Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');
+Route::post('/RegistrarDietas','dietasController@registrarDietas')->middleware('auth');
+
 Auth::routes();
 
 
