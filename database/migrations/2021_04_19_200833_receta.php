@@ -24,6 +24,7 @@ class Receta extends Migration
             $table->longText('pasos');
             $table->string('ruta_imagen');
             $table->string('tipo');
+            $table->string('calorias');
             $table->softDeletes();
             $table->timestamps();
         });
