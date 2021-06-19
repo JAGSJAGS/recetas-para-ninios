@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Receta;
+use App\Dieta;
 
 class dietasController extends Controller
 {
@@ -16,6 +18,22 @@ class dietasController extends Controller
     }
     public function indexAdmin()
     {
-        return view('visualizarDietas.visualizaDietas');
+        $dietas = Dieta::all();
+        //dd($dieta->recetas);
+        return view('DietasNew.ListaDietasAdmin',compact('dietas'));
+    }
+    public function registrarDietas(Request $request){
+
+        $this->validate(request(),[
+
+            'Nombre' => [ 'required'],
+            'Edad' => [ 'required','numeric'],
+        ]);
+        
+        $dieta = new Dieta();
+        $dieta->name = $request->input('Nombre');
+        $dieta->edad = $request->Edad;
+        $dieta->save();
+        return back();
     }
 }
