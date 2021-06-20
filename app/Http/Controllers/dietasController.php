@@ -36,4 +36,10 @@ class dietasController extends Controller
         $dieta->save();
         return back();
     }
+    public function showEditar($id){
+
+        $receta = Receta::find(1);
+        $dieta = Dieta::find($id);
+        return view('DietasNew.editarDieta',compact('dieta','receta'));
+    }
 }

@@ -47,15 +47,13 @@
 
 
 <div class="container w-50 card-group">
-
-    
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">1 Año De Edad</h5>
     </div>
     @foreach ($dietas->where('edad',1) as $dieta)
     <div class="card-footer">
-      <button type="button" class="btn btn-outline-dark">{{$dieta->name}}</button>
+      <div class="col-sm-9"><a type="submit" class="btn btn-outline-dark"  href="/AdminDietas/{{$dieta->id}}">{{$dieta->name}}</a></div>
     </div>
     @endforeach
   </div>
@@ -67,7 +65,7 @@
     </div>
     @foreach ($dietas->where('edad',2) as $dieta)
     <div class="card-footer">
-      <button type="button" class="btn btn-outline-dark">{{$dieta->name}}</button>
+      <div class="col-sm-9"><a type="submit" class="btn btn-outline-dark"  href="/AdminDietas/{{$dieta->id}}">{{$dieta->name}}</a></div>
     </div>
     @endforeach
   </div>
@@ -79,10 +77,9 @@
     </div>
     @foreach ($dietas->where('edad',3) as $dieta)
     <div class="card-footer">
-      <button type="button" class="btn btn-outline-dark">{{$dieta->name}}</button>
+      <div class="col-sm-9"><a type="submit" class="btn btn-outline-dark"  href="/AdminDietas/{{$dieta->id}}">{{$dieta->name}}</a></div>
     </div>
     @endforeach
   </div>
-
 </div>
 @endsection
