@@ -141,7 +141,7 @@
                             </select>
                         </div>
                         <div>
-                            <button id="btnSubmit" class="btn btn-outline-dark" type="submit">Registrar Receta</button>                            
+                            <button id="btnSubmit" class="btn btn-outline-dark" type="submit">Registrar Receta en Horario</button>                            
                         </div>
                     </div>
                 </div>
