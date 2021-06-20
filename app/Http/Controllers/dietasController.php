@@ -38,8 +38,9 @@ class dietasController extends Controller
     }
     public function showEditar($id){
 
-        $receta = Receta::find(1);
+        $recetas = Receta::all();
+        $recetas2 = Receta::all();
         $dieta = Dieta::find($id);
-        return view('DietasNew.editarDieta',compact('dieta','receta'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2'));
     }
 }

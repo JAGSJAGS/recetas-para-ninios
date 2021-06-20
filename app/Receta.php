@@ -20,10 +20,5 @@ class Receta extends Model
     ];
     protected $guarded = ['id'];
     protected $primaryKey = 'id';
-
-    public function dietas(){
-
-        return $this->belongsToMany(Dieta::class, 'dietaReceta', 'receta_id', 'dieta_id');
-    }
 }
 
