@@ -53,6 +53,7 @@ Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
 
 Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');
 Route::post('/RegistrarDietas','dietasController@registrarDietas')->middleware('auth');
+Route::get('/AdminDietas/{id}','dietasController@showEditar')->middleware('auth');
 
 Auth::routes();
 
