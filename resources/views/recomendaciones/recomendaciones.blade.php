@@ -15,7 +15,7 @@
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       
 <! –– contenido de edad1año ––>
-        <div class="card" style="width: 75rem;">
+        <div class="card" style="width:75rem;">
              <div class="card-body">
                 <h5 class="card-title">Charla Sobre Responsabilidad Parental</h5>
               <p class="card-text">Al cumplir su primer año, el bebé empieza una nueva etapa en su alimentación. A esta edad el niño ya puede comer todo tipo de alimento, aparte de que podrá adquirir hábitos saludables.

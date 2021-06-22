@@ -14,7 +14,7 @@
                 <thead>
                   <tr>
                     <th scope="col" >Tipo</th>
-                    <th scope="col" style = "font-family:Brush Script MT,arial,helvética;border: hidden;">LUNES</th>
+                    <th scope="col" style = "font-family:Brush Script MT,arial,helvética; border: hidden;">LUNES</th>
                     <th scope="col" style = "font-family:Brush Script MT,arial,helvética;border: hidden;">MARTES</th>
                     <th scope="col" style = "font-family:Brush Script MT,arial,helvética;border: hidden;">MIERCOLES</th>
                     <th scope="col" style = "font-family:Brush Script MT,arial,helvética;border: hidden;">JUEVES</th>
