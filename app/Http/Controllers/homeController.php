@@ -64,6 +64,37 @@ class HomeController extends Controller
         //$recetas = Receta::all();
         return view('index.index',compact('recetas','recetas2'));
     }
+    public function filtrarAd(Request $request)
+    {//dd($request);
+        if(($request->Tipo == 'Tipo de Comida') && ($request->Edad == 'Edad') && ($request->Calorias == 'Calorias')){
+            $recetas = Receta::all();
+        }
+        if(($request->Tipo == 'Tipo de Comida') && ($request->Edad == 'Edad') && ($request->Calorias != 'Calorias')){
+            $recetas = Receta::where('calorias', $request->Calorias)->get();
+        }
+        if(($request->Tipo == 'Tipo de Comida') && ($request->Edad != 'Edad') && ($request->Calorias == 'Calorias')){
+            $recetas = Receta::where('edad', $request->Edad)->get();
+        }
+        if(($request->Tipo != 'Tipo de Comida') && ($request->Edad == 'Edad') && ($request->Calorias == 'Calorias')){
+            $recetas = Receta::where('tipo', $request->Tipo)->get();
+        }
+        if(($request->Tipo == 'Tipo de Comida') && ($request->Edad != 'Edad') && ($request->Calorias != 'Calorias')){
+            $recetas = Receta::where('calorias', $request->Calorias)->where('edad', $request->Edad)->get();
+        }
+        if(($request->Tipo != 'Tipo de Comida') && ($request->Edad == 'Edad') && ($request->Calorias != 'Calorias')){
+            $recetas = Receta::where('calorias', $request->Calorias)->where('tipo', $request->Tipo)->get();
+        }
+        if(($request->Tipo != 'Tipo de Comida') && ($request->Edad != 'Edad') && ($request->Calorias == 'Calorias')){
+            $recetas = Receta::where('edad', $request->Edad)->where('tipo', $request->Tipo)->get();
+        }
+        if(($request->Tipo != 'Tipo de Comida') && ($request->Edad != 'Edad') && ($request->Calorias != 'Calorias')){
+            $recetas = Receta::where('edad', $request->Edad)->where('tipo', $request->Tipo)->where('calorias', $request->Calorias)->get();
+        }    
+        $recetas2 = Receta::all();
+        //$recetas = Receta::where('tipo', $request->Tipo)->where('edad', $request->Edad)->where('calorias', $request->Calorias)->get();
+        //$recetas = Receta::all();
+        return view('index.indexAdmin',compact('recetas','recetas2'));
+    }
     /**public function __construct()
     {
         $this->middleware('auth');

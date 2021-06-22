@@ -116,6 +116,7 @@
                 <div class="card h-100 border border-dark">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$receta->id}}" data-bs-whatever="@mdo">Ver {{$receta->nombre}}</button> 
+
                 <img src="/images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;">
                     <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
                     @csrf
