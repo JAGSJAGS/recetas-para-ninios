@@ -3,11 +3,11 @@
 @section('content')
 
 
-<h5 class="card-title" style = "font-family:Brush Script MT,arial,helvética;text-align:center; " >RECOMENDACIONES</h5>
+<h5 class="card-title" style = " font-family:Brush Script MT,arial,helvética;text-align:center; " >RECOMENDACIONES</h5>
 
 <div class="accordion accordion-flush" id="accordionFlushExample" >
   <div class="accordion-item" >
-    <h2 class="accordion-header" id="flush-headingOne" style="auto;width:95%;">
+    <h2 class="accordion-header" id="flush-headingOne" style="  auto;width:95%;">
       <button class="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         1 Año De Edad
       </button>
@@ -15,7 +15,7 @@
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       
 <! –– contenido de edad1año ––>
-        <div class="card" style="width:75rem;">
+        <div class="card" style=" width:75rem;">
              <div class="card-body">
                 <h5 class="card-title">Charla Sobre Responsabilidad Parental</h5>
               <p class="card-text">Al cumplir su primer año, el bebé empieza una nueva etapa en su alimentación. A esta edad el niño ya puede comer todo tipo de alimento, aparte de que podrá adquirir hábitos saludables.
@@ -24,7 +24,7 @@
              </div>
         </div>
      
-        <div class="card" style="width: 75rem;">
+        <div class="card" style=" width: 75rem;">
              <div class="card-body">
                <h5 class="card-title">Horarios De Alimentación</h5>
                <p class="card-text">Las necesidades nutricionales de un niño dependerán de su desarrollo, de su peso y medidas, y también de su grado de actividad, si camina, gatea, etc.</p>
@@ -35,7 +35,7 @@
                <p class="card-text">Grasas - 35 a 45 gr/día</p>
         </div>
         
-        <div class="card" style="width: 75rem;">
+        <div class="card" style=" width: 75rem;">
            <div class="card-body">
               <h5 class="card-title">Charla Sobre Alimentos peligrosos</h5>
               <p class="card-text">A los padres nos preocupa mucho la alimentación de nuestros hijos, y procuramos que esta sea siempre lo más saludable y equilibrada posible, huyendo de alimentos con poco valor nutricional o perjudiciales para su salud, tanto a corto como a largo plazo. Pero además de los alimentos poco recomendables, también hay alimentos prohibidos en la dieta infantil, según la edad que tenga el niño</p>
@@ -44,7 +44,7 @@
 
 
 
-          <div class="card mb-3" style="max-width: 75rem;">
+          <div class="card mb-3" style=" max-width: 75rem;">
             <div class="row g-0">
              <div class="col-md-4">
                 <img src="https://i.blogs.es/ddd18e/glass-1379822_1280/1366_2000.jpg" width="100" height="100" alt="img">
@@ -58,7 +58,7 @@
             </div>
           </div>
 
-          <div class="card mb-3" style="max-width: 75rem;">
+          <div class="card mb-3" style=" max-width: 75rem;">
             <div class="row g-0">
              <div class="col-md-4">
                 <img src="https://i.blogs.es/83a5b2/bebidas-vegetales/1366_2000.jpg" width="100" height="100" alt="img">
@@ -71,7 +71,7 @@
              </div>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 75rem;">
+          <div class="card mb-3" style=" max-width: 75rem;">
             <div class="row g-0">
              <div class="col-md-4">
                 <img src="https://i.blogs.es/ff9931/salt-3285024_1280/1366_2000.jpg" width="100" height="100" alt="img">
@@ -90,7 +90,7 @@
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo" style="auto;width:95%;">
+    <h2 class="accordion-header" id="flush-headingTwo" style=" auto;width:95%;">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
         2 Años De Edad
       </button>
@@ -179,7 +179,7 @@
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree" style="auto;width:95%;">
+    <h2 class="accordion-header" id="flush-headingThree" style=" auto;width:95%;">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
         3 Años De Edad
       </button>
