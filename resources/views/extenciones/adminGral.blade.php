@@ -130,6 +130,12 @@ textarea{
     resize:none;
 }
 
+#listadietas{
+    background:rgba(255, 255, 255, 0.8);
+}
+#contenidodietas{
+    background:rgba(255, 255, 255, 0.8);
+}
 
     </style>
 </head>

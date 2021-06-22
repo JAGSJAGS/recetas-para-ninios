@@ -66,6 +66,10 @@ ul, ol {
   text-align: center;
 }
 
+#filtro{
+    background:white;
+    padding: 0px 0px 20px 30px;
+}
 
 
     </style>

@@ -9,7 +9,7 @@
 
 
 <! –– inicio cambios filtro para recetas ––>
-<div class="container">
+<div class="container-fluid" id="filtro">
   <div class="row justify-content-center mt-7 pt-7">
       <form class="" method="POST" action="/Filtrar" enctype="multipart/form-data">
         @csrf
@@ -53,12 +53,12 @@
 
           <div class="col-md-2">
           <br>
-            <button id="btnSubmit" class="btn btn-dark form-control" type="submit">Filtrar</button>
+            <button id="btnSubmit" class="btn btn-outline-dark form-control" type="submit">Filtrar</button>
           </div>
 
           <div class="col-md-2">
           <br>
-            <button type="submit" class="btn btn-outline-danger">Cancelar</button> 
+            <button type="submit" class="btn btn-outline-danger  form-control">Cancelar</button> 
           </div>  
 
         </div>             

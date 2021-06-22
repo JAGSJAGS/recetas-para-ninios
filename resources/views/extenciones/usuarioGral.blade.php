@@ -79,6 +79,18 @@ ul, ol {
     background:rgba(255, 255, 255, 0.7);
 }
 
+#evaluacionalim{
+    background:rgba(255, 255, 255, 0.8);
+    padding:40px;
+}
+
+#listadietas{
+    background:rgba(255, 255, 255, 0.8);
+}
+
+#dietass{
+    background:rgba(255, 255, 255, 0.8);
+}
 
     </style>
 </head>
