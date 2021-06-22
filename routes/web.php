@@ -62,6 +62,9 @@ Route::post('/FiltrarAdmin','homeController@filtrarAd')->middleware('auth');
 Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');
 Route::post('/RegistrarDietas','dietasController@registrarDietas')->middleware('auth');
 Route::get('/AdminDietas/{id}','dietasController@showEditar')->middleware('auth');
+Route::post('/AdminDietas/{id}','dietasController@buscarReceta')->middleware('auth');
+Route::post('/FiltrarEditarDieta/{id}','dietasController@filtrarReceta')->middleware('auth');
+Route::post('/RegistrarHorario/{id}','dietasController@registrarHorario')->middleware('auth');
 
 Auth::routes();
 
