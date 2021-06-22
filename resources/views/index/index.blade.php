@@ -9,7 +9,11 @@
 
 
 <! –– inicio cambios filtro para recetas ––>
+<<<<<<< HEAD
 <div class="container">
+=======
+<div class="container-fluid" id="filtro">
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
   <div class="row justify-content-center mt-7 pt-7">
       <form class="" method="POST" action="/Filtrar" enctype="multipart/form-data">
         @csrf
@@ -53,12 +57,20 @@
 
           <div class="col-md-2">
           <br>
+<<<<<<< HEAD
             <button id="btnSubmit" class="btn btn-dark form-control" type="submit">Filtrar</button>
+=======
+            <button id="btnSubmit" class="btn btn-outline-dark form-control" type="submit">Filtrar</button>
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
           </div>
 
           <div class="col-md-2">
           <br>
+<<<<<<< HEAD
             <button type="submit" class="btn btn-outline-danger">Cancelar</button> 
+=======
+            <button type="submit" class="btn btn-outline-danger  form-control">Cancelar</button> 
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
           </div>  
 
         </div>             

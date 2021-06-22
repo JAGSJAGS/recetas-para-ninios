@@ -130,6 +130,12 @@ textarea{
     resize:none;
 }
 
+#listadietas{
+    background:rgba(255, 255, 255, 0.8);
+}
+#contenidodietas{
+    background:rgba(255, 255, 255, 0.8);
+}
 
     </style>
 </head>
@@ -143,10 +149,15 @@ textarea{
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
+<<<<<<< HEAD
                        <li><a href="/IndexAdmin">Inicio</a> </li>
                        <li><a href="/Recetas">Lista de Recetas</a> </li>
                        <li><a href="/Registrar">Registrar Receta</a> </li>
                        <li><a href="/AdminDietas">Dieta</a> </li>                     
+=======
+                    <li><a href="/EvaluacionAdmin">Evaluación Alimenticia</a> </li>
+                    <li><a href="/AdminDietas">Dietas</a> </li>                           
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
                   </ul> 
                </li>  
             </ul>

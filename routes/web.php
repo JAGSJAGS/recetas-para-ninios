@@ -41,6 +41,7 @@ Route::get('/','homeController@index2')->name('indexUser')->middleware('guest');
 Route::get('/UReceta/{id}','verRecetaController@show2')->middleware('guest');
 Route::post('/','homeController@buscar2')->middleware('guest');
 
+<<<<<<< HEAD
 Route::get('/Evaluacion','evaluacionConroller@index')->middleware('guest');
 Route::post('/Evaluacion','evaluacionConroller@Calcular')->middleware('guest');
 
@@ -49,11 +50,35 @@ Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
 Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
 
 Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
+=======
+Route::get('/UReceta/{id}','verRecetaController@show')->middleware('auth');
+
+Route::get('/Evaluacion','evaluacionConroller@index')->middleware('guest'); //ruta evaluacion usuario
+Route::post('/Evaluacion','evaluacionConroller@Calcular')->middleware('guest');
+
+Route::get('/EvaluacionAdmin','evaluacionConroller@indexAdmin')->middleware('auth'); //ruta evaluacion admin
+Route::post('/EvaluacionAdmin','evaluacionConroller@CalcularAdmin')->middleware('auth');
+
+Route::get('/Dietas','dietasController@index')->middleware('guest');
+Route::get('/Dieta','dietasController@verDieta')->middleware('guest');
+Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest'); //ruta recomendaciones usuario
+
+Route::get('/RecomendacionesAdmin','recomendacionesController@index')->middleware('auth');//ruta recomendaciones admin
+
+Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
+Route::post('/FiltrarAdmin','homeController@filtrarAd')->middleware('auth');
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
 
 
 Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');
 Route::post('/RegistrarDietas','dietasController@registrarDietas')->middleware('auth');
 Route::get('/AdminDietas/{id}','dietasController@showEditar')->middleware('auth');
+<<<<<<< HEAD
+=======
+Route::post('/AdminDietas/{id}','dietasController@buscarReceta')->middleware('auth');
+Route::post('/FiltrarEditarDieta/{id}','dietasController@filtrarReceta')->middleware('auth');
+Route::post('/RegistrarHorario/{id}','dietasController@registrarHorario')->middleware('auth');
+>>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
 
 Auth::routes();
 

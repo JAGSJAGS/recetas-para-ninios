@@ -3,16 +3,9 @@
 <br>
          <br>
               
-<<<<<<< HEAD
         <div class="container">
             <div class="row justify-content-center mt-7 pt-7">
                 <h1 class="display-5" align="center">Evaluacion Alimenticia</h1>
-=======
-        
-         <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Evaluacion Alimenticia</h1>
-             </div>
-        <div class="container" id="evaluacionalim">
->>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
             <hr class="bg-info">
             @if(!$errors->isEmpty())
              <div class="alert alert-danger">
@@ -24,7 +17,7 @@
              </div>
             @endif  
            
-        <form class="" method="POST" action="/Evaluacion" enctype="multipart/form-data">
+        <form class="" method="POST" action="/EvaluacionAdmin" enctype="multipart/form-data">
             @csrf
             <div class="row form-group">
                 <label for="edad" class="col-form-label col-md-4" >Edad </label>
@@ -71,7 +64,6 @@
             
             <div class="container">
                 <div class="row">
-<<<<<<< HEAD
                   <div class="col">
                     <button id="btnSubmit" class="btn btn-success form-control btn-block" type="submit">Evaluar</button></div>
                 </form>
@@ -82,20 +74,6 @@
       
             </div>
             
-=======
-                <div class="col">
-                        <a type="submit" class="btn btn-danger form-control btn-block"  href="/">Retornar Inicio</a></div>
-
-                  <div class="col">
-                    <button id="btnSubmit" class="btn btn-dark form-control btn-block" type="submit">Evaluar</button></div>
-                </form>
-
-            
-              </div>
-      
-            </div>
-            </div>     
->>>>>>> be44029b82a3a4349a0601d294660eb779d10c9e
     </div>
     <div>
         <h1 class="display-8" align="center">El estado del niño es :</h1>
