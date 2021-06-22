@@ -6,19 +6,14 @@
 <div class="container-md container-inline w-50">
     <br><br> 
     @if(!$errors->isEmpty())
-  <div class="alert alert-danger">
-    <p><strong>Oops!</strong> Por favor arregle los errores</p>
-    <ul>
-    @foreach ($errors->all() as $error)
-      <li>{{($error)}}</li>  
-    @endforeach
-  </div>
-
-@endif  
-   @if(session('mensaje'))
-    <div class="alert alert-success" role="alert" style="background-color: #585858;"><h4><FONT COLOR="white">Registro Exitoso</FONT></h4> </div>
-   @endif
-
+         <div class="alert alert-danger">
+         <p><strong>Oops!</strong> Por favor arregle los errores</p>
+         <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{($error)}}</li>  
+          @endforeach
+         </div>
+    @endif  
       <form class="container w-75 " method="POST" action="Registrar" enctype="multipart/form-data">
       @csrf
 
@@ -48,6 +43,30 @@
         <label for="inputPassword3" class="col col-form-label">Ingredientes Alternativos:</label>
           <textarea class="form-control" name="IngredientesAlternativos" maxlength="1000" rows="4">{{ old('IngredientesAlternativos') }} </textarea>
       </div>
+
+      <div class="row form-group">
+                <label for="Tipo" class="col-form-label col-md-4" >Tipo </label>
+                <div class="col-md-8">
+                    <select name="Tipo" class="form-control">
+                        <option value="">Selecciona Tipo</option>
+                        <option value="Desayuno">Desayuno</option>
+                        <option value="Almuerzo">Almuerzo</option>
+                        <option value="Cena">Cena</option>
+                    </select>
+                </div>           
+      </div><br>
+
+      <div class="row form-group">
+                <label for="Calorias" class="col-form-label col-md-4" >Calorias </label>
+                <div class="col-md-8">
+                  <select name="Calorias" class="form-control">
+                    <option selected>Calorias</option>
+                    <option value="100-200 cal">100-200 cal</option>
+                    <option value="200-300 cal">200-300 cal</option>
+                    <option value="300-400 cal">300-400 cal</option>
+                    <option value="+400 cal">+400 cal</option>
+                  </select>          
+      </div><br>
 
       <div class="row mb-3">
         <label for="inputPassword3" class="col-sm-3 col-form-label">Pasos:</label>

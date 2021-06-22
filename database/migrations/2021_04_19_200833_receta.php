@@ -23,6 +23,8 @@ class Receta extends Migration
             $table->longText('ingredientes_alternativos')->nullable();
             $table->longText('pasos');
             $table->string('ruta_imagen');
+            $table->string('tipo');
+            $table->string('calorias');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -36,6 +38,28 @@ class Receta extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        Schema::create('dieta', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->smallInteger('edad');
+            $table->softDeletes();
+            $table->timestamps();
+        });
+        Schema::create('dietaReceta', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->unsignedBigInteger('receta_id');
+            $table->unsignedBigInteger('dieta_id');
+            $table->foreign('receta_id')->references('id')->on('receta');
+            $table->foreign('dieta_id')->references('id')->on('dieta');
+            $table->string('dia');
+            $table->softDeletes();
+            $table->timestamps();
+        });
+        
+
         /**Schema::create('usuario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->string('nombre');
@@ -67,6 +91,8 @@ class Receta extends Migration
      */
     public function down()
     {
+        Schema::drop('dietaReceta');
+        Schema::drop('dieta');
         Schema::drop('receta');
         //Schema::drop('usuario');
         Schema::dropIfExists('users');

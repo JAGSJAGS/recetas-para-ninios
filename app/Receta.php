@@ -14,8 +14,11 @@ class Receta extends Model
         'edad',
         'ingredientes_alternativos',
         'pasos',
-        'ruta_imagen'
+        'ruta_imagen',
+        'tipo',
+        'calorias'
     ];
     protected $guarded = ['id'];
     protected $primaryKey = 'id';
 }
+

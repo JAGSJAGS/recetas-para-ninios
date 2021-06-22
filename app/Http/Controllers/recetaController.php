@@ -14,6 +14,7 @@ class recetaController extends Controller
     }
     public function registrar(Request $request)
     {
+
         $this->validate(request(),[
           
             'Nombre' => ['required' ,'max:40', 'regex:/^[\pL\s\-]+$/u'],
@@ -21,10 +22,12 @@ class recetaController extends Controller
             'Ingredientes' =>['required', 'max:1000'  ],
             'Edad' =>['required', 'numeric'],
             'IngredientesAlternativos' =>['max:1000'],
+            'Tipo' =>['required'],
+            'Calorias' =>['required'],
             'Pasos' =>['required', 'max:3000' ]
         ]);
         
-        
+        //dd($request);
         if($request->hasFile('imagen')){
             $validatedData = $request->validate([
              'imagen' => 'required|mimes:jpeg,png,jpg',
@@ -40,6 +43,8 @@ class recetaController extends Controller
         $receta->edad = $request->input('Edad');
         $receta->ingredientes_alternativos = $request->input('IngredientesAlternativos');
         $receta->pasos = $request->input('Pasos');
+        $receta->tipo = $request->Tipo;
+        $receta->calorias = $request->Calorias;
         $receta->ruta_imagen = $name;
 
         $receta->save();
