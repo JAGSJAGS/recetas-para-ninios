@@ -19,7 +19,7 @@
     <tbody>
         <tr>
         <th scope="row">Desayuno</th>
-        <td>@foreach($dietaRecetas)</td>
+        <td></td>
         <td></td>
         </tr>
         <tr>
@@ -105,7 +105,7 @@
                             <label for="Dia" class="col-form-label" required></label>
                             <select name="Dia" class="form-control">
                                 <option value="Lunes">Lunes</option>
-                                <option value="Martes">Almuerzo</option>
+                                <option value="Martes">Martes</option>
                                 <option value="Miercoles">Miercoles</option>
                                 <option value="Jueves">Jueves</option>
                                 <option value="Viernes">Viernes</option>
