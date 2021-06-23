@@ -39,22 +39,22 @@ class dietasController extends Controller
     }
     public function showEditar($id){
 
-        $dietaReceta = DietaReceta::where('dieta_id', $id)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dieta = Dieta::find($id);
         $recetas = Receta::where('edad', $dieta->edad)->get();
         
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaReceta'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
     }
     public function buscarReceta(Request $request,$id){
 
-        $dietaReceta = DietaReceta::where('dieta_id', $id)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dieta = Dieta::find($id);
         $recetas = Receta::where('nombre', $request->input('Nombre'))->where('edad', $dieta->edad)->get();        
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaReceta'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
     }
     public function filtrarReceta(Request $request,$id){
 
-        $dietaReceta = DietaReceta::where('dieta_id', $id)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dieta = Dieta::find($id);
         if(($request->Tipo == 'Tipo de Comida') && ($request->Calorias == 'Calorias')){
             $recetas = Receta::where('edad', $dieta->edad)->get();
@@ -70,11 +70,11 @@ class dietasController extends Controller
         }
 
         
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaReceta'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
     }
     public function registrarHorario(Request $request,$id){
 
-        $dietaReceta = DietaReceta::where('dieta_id', $id)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dr = new DietaReceta();
         $dr->name = 'Nombre';
         $dr->receta_id = $request->input('Receta_id');
@@ -84,6 +84,6 @@ class dietasController extends Controller
 
         $dieta = Dieta::find($id);
         $recetas = Receta::where('edad', $dieta->edad)->get();       
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaReceta'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
     }
 }
