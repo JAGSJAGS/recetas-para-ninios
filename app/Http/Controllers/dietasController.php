@@ -11,11 +11,15 @@ class dietasController extends Controller
 {
     public function index()
     {
-        return view('DietasNew.Lista De Dietas');
+        $dietas = Dieta::all();
+        return view('DietasNew.Lista De Dietas',compact('dietas'));
     }
-    public function verDieta()
+    public function verDieta($id)
     {
-        return view('visualizarDietas.visualizaDietas');
+        $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
+        $dieta = Dieta::find($id);
+        $recetas = Receta::where('edad', $dieta->edad)->get();
+        return view('visualizarDietas.visualizaDietas',compact('dieta','recetas','dietaRecetas'));
     }
     public function indexAdmin()
     {
