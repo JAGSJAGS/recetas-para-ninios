@@ -151,7 +151,9 @@ ul, ol {
                     <li><a href="/EvaluacionAdmin">Evaluación Alimenticia</a> </li>
                     <li><a href="/AdminDietas">Dietas</a> </li>
                     <li><a href="/AdminDietas">Ver Dieta</a> </li>
-                    <li><a href="/RecomendacionesAdmin">Recomendaciones</a> </li>                       
+                    <li><a href="/RecomendacionesAdmin">Recomendaciones</a> </li>
+                    <li><a href="/Registrar">Registrar Reeceta</a> </li>
+                    <li><a href="/Recetas">Ver Recetas</a> </li>                       
                   </ul> 
                </li>  
             </ul>
