@@ -19,34 +19,14 @@
     <tbody>
         <tr>
         <th scope="row">Desayuno</th>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Lunes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Martes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Miercoles')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td> 
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Jueves')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Viernes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Sàbado')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Desayuno') as $receta) @foreach($dietaReceta->where('dia','Domingo')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
+        <td>@foreach($dietaRecetas)</td>
+        <td></td>
         </tr>
         <tr>
         <th scope="row">Almuerzo</th>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Lunes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Martes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Miercoles')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td> 
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Jueves')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Viernes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Sàbado')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Almuerzo') as $receta) @foreach($dietaReceta->where('dia','Domingo')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
         </tr>
         <tr>
         <th scope="row">Cena</th>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) {{$receta->nombre}} @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Lunes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Martes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Miercoles')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td> 
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Jueves')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Viernes')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Sàbado')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
-        <td>@foreach($dieta->recetas->where('tipo','Cena') as $receta) @foreach($dietaReceta->where('dia','Domingo')->where('receta_id',$receta->id) as $dietar )@foreach($dieta->recetas->where('id',$dietar->receta_id) as $receta2) {{$receta2->nombre}} @endforeach @endforeach  @endforeach</td>
         </tr>
     </tbody>
     </table>   
