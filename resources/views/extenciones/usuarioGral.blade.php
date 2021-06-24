@@ -106,7 +106,8 @@ ul, ol {
                <li><a href="#">Menú</a>             
                    <ul>
                        <li><a href="/Evaluacion">Evaluación Alimenticia</a> </li>
-                       <li><a href="/Dietas">Dietas</a> </li>                  
+                       <li><a href="/Dietas">Dietas</a> </li>
+                       <li><a href="/Recomendaciones">Recomendaciones</a> </li>                  
                   </ul> 
                </li>  
             </ul>

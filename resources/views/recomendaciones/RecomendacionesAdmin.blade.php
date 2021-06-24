@@ -3,8 +3,9 @@
 @section('content')
 
 
-<h5 class="card-title">RECOMENDACIONES</h5>
-
+<br>
+<div class="container w-75 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1> Recomendaciones </h1></div>
+<div class="container-md container-inline w-50">
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
@@ -279,5 +280,6 @@
     
     </div>
   </div>
+</div>
 </div>
 @endsection

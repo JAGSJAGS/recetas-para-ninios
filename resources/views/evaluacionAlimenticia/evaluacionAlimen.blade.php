@@ -6,7 +6,7 @@
         
          <div class="container w-50 center" style = "font-family:Brush Script MT,arial,helvética;"><h1>Evaluacion Alimenticia</h1>
              </div>
-        <div class="container" id="evaluacionalim">
+        <div class="container w-50" id="evaluacionalim">
             <hr class="bg-info">
             @if(!$errors->isEmpty())
              <div class="alert alert-danger">
