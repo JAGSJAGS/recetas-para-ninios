@@ -46,35 +46,39 @@ class dietasController extends Controller
         $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dieta = Dieta::find($id);
         $recetas = Receta::where('edad', $dieta->edad)->get();
+        $recetas2 = Receta::where('edad', $dieta->edad)->get();
         
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
     }
     public function buscarReceta(Request $request,$id){
 
         $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
         $dieta = Dieta::find($id);
-        $recetas = Receta::where('nombre', $request->input('Nombre'))->where('edad', $dieta->edad)->get();        
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
+        $recetas = Receta::where('edad', $dieta->edad)->get();
+        $recetas2 = Receta::where('nombre', $request->input('Nombre'))->where('edad', $dieta->edad)->get();        
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
     }
     public function filtrarReceta(Request $request,$id){
 
         
         $dieta = Dieta::find($id);
         if(($request->Tipo == 'Tipo de Comida') && ($request->Calorias == 'Calorias')){
-            $recetas = Receta::where('edad', $dieta->edad)->get();
+            $recetas2 = Receta::where('edad', $dieta->edad)->get();
         }
         if( ($request->Tipo == 'Tipo de Comida') && ($request->Calorias != 'Calorias')){
-            $recetas = Receta::where('calorias', $request->Calorias)->where('edad', $dieta->edad)->get();
+            $recetas2 = Receta::where('calorias', $request->Calorias)->where('edad', $dieta->edad)->get();
         }
         if(($request->Tipo != 'Tipo de Comida') && ($request->Calorias == 'Calorias')){
-            $recetas = Receta::where('tipo', $request->Tipo)->where('edad', $dieta->edad)->get();
+            $recetas2 = Receta::where('tipo', $request->Tipo)->where('edad', $dieta->edad)->get();
         }
         if(($request->Tipo != 'Tipo de Comida') && ($request->Calorias != 'Calorias')){
-            $recetas = Receta::where('tipo', $request->Tipo)->where('calorias', $request->Calorias)->where('edad', $dieta->edad)->get();
+            $recetas2 = Receta::where('tipo', $request->Tipo)->where('calorias', $request->Calorias)->where('edad', $dieta->edad)->get();
         }
 
+
+        $recetas = Receta::where('edad', $dieta->edad)->get();
         $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
     }
     public function registrarHorario(Request $request,$id){
 
@@ -88,7 +92,20 @@ class dietasController extends Controller
 
         $dieta = Dieta::find($id);
         $recetas = Receta::where('edad', $dieta->edad)->get();
+        $recetas2 = Receta::where('edad', $dieta->edad)->get();
         $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();       
-        return view('DietasNew.editarDieta',compact('dieta','recetas','dietaRecetas'));
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
     }
+    public function eliminarDieta($id){
+
+        $dietaReceta = DietaReceta::find($id);
+        $dieta = Dieta::find($dietaReceta->dieta_id);
+        $dietaReceta->delete();
+        $recetas = Receta::where('edad', $dieta->edad)->get();
+        $recetas2 = Receta::where('edad', $dieta->edad)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $dieta->id)->get();       
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
+    }
+
+    
 }

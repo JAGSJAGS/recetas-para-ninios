@@ -21,6 +21,8 @@ Route::get('Registrar','recetaController@index')->middleware('auth');//muestra f
 Route::post('Registrar','recetaController@registrar')->middleware('auth');//registra receta
 Route::get('/Receta/{id}','verRecetaController@show')->middleware('auth');//muestra receta
 Route::get('/Recetas','listaController@listar')->middleware('auth');//listar receta
+Route::delete('/RecetasEliminar/{id}','listaController@eliminar')->middleware('auth');//listar receta
+
 Route::get('/Recetas/{id}/editar','recetaController@editar')->middleware('auth');//mostrar formulario para editar
 
 Route::get('IniciarSeción','loginController@index')->name('indexlog')->middleware('guest');//login index
@@ -54,6 +56,7 @@ Route::get('/Recomendaciones','recomendacionesController@index')->middleware('gu
 Route::get('/RecomendacionesAdmin','recomendacionesController@index')->middleware('auth');
 
 Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
+Route::post('/FiltrarAdmin','homeController@filtrarAd')->middleware('auth');
 
 
 Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');
@@ -62,6 +65,9 @@ Route::get('/AdminDietas/{id}','dietasController@showEditar')->middleware('auth'
 Route::post('/AdminDietas/{id}','dietasController@buscarReceta')->middleware('auth');
 Route::post('/FiltrarEditarDieta/{id}','dietasController@filtrarReceta')->middleware('auth');
 Route::post('/RegistrarHorario/{id}','dietasController@registrarHorario')->middleware('auth');
+
+Route::delete('/DietasEliminar/{id}','dietasController@eliminarDieta')->middleware('auth');
+
 
 Auth::routes();
 
