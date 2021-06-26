@@ -20,156 +20,282 @@
         <tr>
         <th scope="row">Desayuno</th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Martes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Martes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Desayuno') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         </tr>
         <tr>
         <th scope="row">Almuerzo</th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Martes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Martes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Almuerzo') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         </tr>
         <tr>
         <th scope="row">Cena</th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Lunes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Martes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Martes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Miercoles') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Jueves') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Viernes') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Sábado') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         <th><div class="card h-100 border border-dark">
-                <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
-                    @csrf
-                    <div class="card-body">@foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta) @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta) {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> @endforeach @endforeach</div>
+        @foreach($dietaRecetas->where('dia','Domingo') as $dietaReceta)
+        @foreach($recetas->where('id',$dietaReceta->receta_id)->where('tipo','Cena') as $receta)
+            <form class="" method="POST" action="/DietasEliminar/{{$dietaReceta->id}}" enctype="multipart/form-data">
+
+                <input type="hidden" name="_method" value="DELETE">@csrf
+                    <div class="card-body">  {{$receta->nombre}} <button id="btnSubmit" class="btn btn-outline-danger form-control" type="submit">Eliminar</button> </div>
                 </form>
+        @endforeach 
+        @endforeach
+                
             </div>
         </th>
         </tr>

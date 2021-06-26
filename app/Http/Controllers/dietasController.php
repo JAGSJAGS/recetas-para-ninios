@@ -96,4 +96,16 @@ class dietasController extends Controller
         $dietaRecetas = DietaReceta::where('dieta_id', $id)->get();       
         return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
     }
+    public function eliminarDieta($id){
+
+        $dietaReceta = DietaReceta::find($id);
+        $dieta = Dieta::find($dietaReceta->dieta_id);
+        $dietaReceta->delete();
+        $recetas = Receta::where('edad', $dieta->edad)->get();
+        $recetas2 = Receta::where('edad', $dieta->edad)->get();
+        $dietaRecetas = DietaReceta::where('dieta_id', $dieta->id)->get();       
+        return view('DietasNew.editarDieta',compact('dieta','recetas','recetas2','dietaRecetas'));
+    }
+
+    
 }

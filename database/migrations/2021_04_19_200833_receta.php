@@ -52,7 +52,7 @@ class Receta extends Migration
             $table->string('name');
             $table->unsignedBigInteger('receta_id');
             $table->unsignedBigInteger('dieta_id');
-            $table->foreign('receta_id')->references('id')->on('receta');
+            $table->foreign('receta_id')->references('id')->on('receta')->onDelete('cascade');
             $table->foreign('dieta_id')->references('id')->on('dieta');
             $table->string('dia');
             $table->softDeletes();
