@@ -54,6 +54,7 @@ Route::get('/Recomendaciones','recomendacionesController@index')->middleware('gu
 Route::get('/RecomendacionesAdmin','recomendacionesController@index')->middleware('auth');
 
 Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
+Route::post('/FiltrarAdmin','homeController@filtrarAd')->middleware('auth');
 
 
 Route::get('/AdminDietas','dietasController@indexAdmin')->middleware('auth');

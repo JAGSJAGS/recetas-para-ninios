@@ -236,18 +236,20 @@
         
     <div class="container-md container-inline w-100 container-bordered" style="overflow-y: scroll;"><br>
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            @foreach($recetas as $receta)
+            @foreach($recetas2 as $receta2)
             <div class="col">
                 <div class="card h-100 border border-dark">
+                <h5>{{$receta2->tipo}}</h5>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$receta->id}}" data-bs-whatever="@mdo">Ver {{$receta->nombre}}</button> 
+                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$receta2->id}}" data-bs-whatever="@mdo">Ver {{$receta2->nombre}}</button> 
 
-                <img src="/images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;">
+                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$receta2->id}}" data-bs-whatever="@mdo"><img src="/images/{{$receta2->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;"></a>
                     <form class="" method="POST" action="/RegistrarHorario/{{$dieta->id}}" enctype="multipart/form-data">
                     @csrf
-                    <div class="card-body">         
+                    <div class="card-body">  
                         <div class="">
                             <label for="Dia" class="col-form-label" required></label>
+                            <h5>Seleccione Dia.</h5> 
                             <select name="Dia" class="form-control">
                                 <option value="Lunes">Lunes</option>
                                 <option value="Martes">Martes</option>
@@ -258,7 +260,7 @@
                                 <option value="Domingo">Domingo</option>
                             </select>
                         </div>
-                        <input type="hidden" name="Receta_id"value="{{$receta->id}}">
+                        <input type="hidden" name="Receta_id"value="{{$receta2->id}}">
                         <div>
                             <button id="btnSubmit" class="btn btn-outline-dark" type="submit">Seleccionar Dieta</button>                            
                         </div>
@@ -268,34 +270,39 @@
             </div>
 
             <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop{{$receta->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="staticBackdrop{{$receta2->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable modal-xl">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">{{$receta->nombre}}</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">{{$receta2->nombre}}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         
-                    <h5 class="card-title">Edad del niño</h5>
-
                             <div class="card w-25" >
                                 <div class="card-body">
-                                <img src="/images/{{$receta->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;">
+                                <img src="/images/{{$receta2->ruta_imagen}}" class="card-img-top" alt="Imagen de Receta" style="width: 100%; height: 20vh;">
+                                </div>
+                            </div>
+                            
+                            <h5 class="card-title">Tipo de Receta</h5>
+                            <div class="card w-25" >
+                                <div class="card-body">
+                                        <p class="card-text">{{$receta2->tipo}}</p>
                                 </div>
                             </div>
 
+                            <h5 class="card-title">Edad del niño</h5>
                             <div class="card w-25" >
                                 <div class="card-body">
-                                        <p class="card-text">{{$receta->edad}}</p>
+                                        <p class="card-text">{{$receta2->edad}}</p>
                                 </div>
                             </div>
-
 
                             <h5 class="card-title">Ingredientes</h5>
                             <div class="card w-100">
                                 <div class="card-body">
-                                    <p class="card-text">{{$receta->ingredientes}}</p>
+                                    <p class="card-text">{{$receta2->ingredientes}}</p>
                                 </div>
                             </div>
 
@@ -303,14 +310,14 @@
                             <h5 class="card-title">Ingredientes Alternativos</h5>
                             <div class="card w-100">
                                     <div class="card-body">
-                                        <p class="card-text">{{$receta->ingredientes_alternativos}}</p>
+                                        <p class="card-text">{{$receta2->ingredientes_alternativos}}</p>
                                     </div>
                             </div>
 
                             <h5 class="card-title">Preparado</h5>
                             <div class="card w-100">
                                     <div class="card-body">
-                                        <p class="card-text">{{$receta->pasos}}</p>
+                                        <p class="card-text">{{$receta2->pasos}}</p>
                                     </div>
                             </div>
 
