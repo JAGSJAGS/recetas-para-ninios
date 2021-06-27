@@ -1,7 +1,7 @@
 @extends('extenciones.usuarioGral')
 @section('content')
 <br>
-<div class="container w-75 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>Horario: {{$dieta->name}}</h1></div>
+<div class="container w-75 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>{{$dieta->name}}</h1></div>
 <div class="container-md container-inline w-100">
     <table class="table">
     <thead>
@@ -432,14 +432,7 @@
         
         </tr>
         <tr>
-        <th scope="col">Tipo</th>
-        <th scope="col">Lunes</th>
-        <th scope="col">Martes</th>
-        <th scope="col">Miercoles</th>
-        <th scope="col">Jueves</th>
-        <th scope="col">Viernes</th>
-        <th scope="col">Sábado</th>
-        <th scope="col">Domingo</th>
+
         </tr>
         <tr>
         <th scope="row">Almuerzo</th>
@@ -813,14 +806,7 @@
         </th>
         </tr>
         <tr>
-        <th scope="col">Tipo</th>
-        <th scope="col">Lunes</th>
-        <th scope="col">Martes</th>
-        <th scope="col">Miercoles</th>
-        <th scope="col">Jueves</th>
-        <th scope="col">Viernes</th>
-        <th scope="col">Sábado</th>
-        <th scope="col">Domingo</th>
+        
         </tr>
         <tr>
         <th scope="row">Cena</th>

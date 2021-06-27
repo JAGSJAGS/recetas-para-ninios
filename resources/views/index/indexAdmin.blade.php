@@ -9,7 +9,7 @@
 
 
 <! –– inicio cambios filtro para recetas ––>
-<div class="container">
+<div class="container-fluid" id="filtro">
   <div class="row justify-content-center mt-7 pt-7">
       <form class="" method="POST" action="/FiltrarAdmin" enctype="multipart/form-data">
         @csrf
@@ -24,9 +24,9 @@
             <label for="Edad" class="col-form-label" required></label>
               <select name="Edad" class="form-control">
                   <option selected>Edad</option>
-                  <option value="1">1 año</option>
-                  <option value="2">2 años</option>
-                  <option value="3">3 años</option>
+                  <option value="1">1 año de edad</option>
+                  <option value="2">2 años de edad</option>
+                  <option value="3">3 años de edad</option>
               </select>              
           </div>
           
@@ -53,12 +53,12 @@
 
           <div class="col-md-2">
           <br>
-            <button id="btnSubmit" class="btn btn-dark form-control" type="submit">Filtrar</button>
+          <button id="btnSubmit" class="btn btn-outline-dark form-control" type="submit">Filtrar</button>
           </div>
 
           <div class="col-md-2">
           <br>
-            <button type="submit" class="btn btn-outline-danger">Cancelar</button> 
+          <button type="submit" class="btn btn-outline-danger form-control">Cancelar</button> 
           </div>  
 
         </div>             

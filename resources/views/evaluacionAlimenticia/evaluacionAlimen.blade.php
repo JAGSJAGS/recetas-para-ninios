@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                 <div class="col">
-                        <a type="submit" class="btn btn-danger form-control btn-block"  href="/">Retornar Inicio</a></div>
+                        <a type="submit" class="btn btn-danger form-control btn-block"  href="/">Retornar al Inicio</a></div>
 
                   <div class="col">
                     <button id="btnSubmit" class="btn btn-dark form-control btn-block" type="submit">Evaluar</button></div>
