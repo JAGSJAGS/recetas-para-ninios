@@ -43,12 +43,12 @@
 
           <div class="col-md-2">
             <label for="Tipo" class="col-form-label" required></label>
-              <select name="Tipo" class="form-control">
+              <select name="Tipo" class="form-control" >
                   <option selected>Tipo de Comida</option>
                   <option value="Desayuno">Desayuno</option>
                   <option value="Almuerzo">Almuerzo</option>
                   <option value="Cena">Cena</option>
-              </select>
+                </select>
           </div>
 
           <div class="col-md-2">
