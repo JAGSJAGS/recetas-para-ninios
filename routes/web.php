@@ -53,7 +53,7 @@ Route::post('/EvaluacionAdmin','evaluacionConroller@CalcularAdmin')->middleware(
 Route::get('/Dietas','dietasController@index')->middleware('guest');
 Route::get('/Dieta/{id}','dietasController@verDieta')->middleware('guest');
 Route::get('/Recomendaciones','recomendacionesController@index')->middleware('guest');
-Route::get('/RecomendacionesAdmin','recomendacionesController@index')->middleware('auth');
+Route::get('/RecomendacionesAdmin','recomendacionesController@index2')->middleware('auth');
 
 Route::post('/Filtrar','homeController@filtrar')->middleware('guest');
 Route::post('/FiltrarAdmin','homeController@filtrarAd')->middleware('auth');

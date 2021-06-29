@@ -10,4 +10,8 @@ class recomendacionesController extends Controller
     {
         return view('recomendaciones.recomendaciones');
     }
+    public function index2()
+    {
+        return view('recomendaciones.recomendacionesAdmin');
+    }
 }
