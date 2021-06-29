@@ -149,12 +149,11 @@ textarea{
             <ul class ="nav">
                <li><a href="#">Menú</a>             
                    <ul>
-                   <li><a href="/EvaluacionAdmin">Evaluación Alimenticia</a> </li>
-                    <li><a href="/AdminDietas">Dietas</a> </li>
-                    <li><a href="/AdminDietas">Ver Dieta</a> </li>
-                    <li><a href="/RecomendacionesAdmin">Recomendaciones</a> </li> 
+                    <li><a href="/EvaluacionAdmin">Evaluación Alimenticia</a> </li>
+                    <li><a href="/RecomendacionesAdmin">Recomendaciones</a> </li>
+                    <li><a href="/Recetas">Ver Recetas</a> </li>
                     <li><a href="/Registrar">Registrar Receta</a> </li>
-                    <li><a href="/Recetas">Ver Recetas</a> </li>                          
+                    <li><a href="/AdminDietas">Ver Dietas</a> </li>                        
                   </ul> 
                </li>  
             </ul>

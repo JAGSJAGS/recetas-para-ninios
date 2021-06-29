@@ -1,4 +1,4 @@
-@extends('extenciones.usuarioGral')
+@extends('extenciones.adminGral')
 @section('content')
 <br>
          <br>
