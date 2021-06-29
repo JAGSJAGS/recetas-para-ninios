@@ -14,8 +14,8 @@ class evaluacionConroller extends Controller
     }
     public function Calcular(Request $request){
         $this->validate(request(),[
-            'Peso' => ['required', 'numeric'],
-            'Altura' => [ 'required','numeric'],
+            'Peso' => ['required', 'numeric','not_in:0'],
+            'Altura' => [ 'required','numeric','not_in:0'],
             'Edad' =>['required' ],
             'Sexo' =>['required' ],
         ]);
@@ -59,8 +59,8 @@ class evaluacionConroller extends Controller
 
     public function CalcularAdmin(Request $request){
         $this->validate(request(),[
-            'Peso' => ['required', 'numeric'],
-            'Altura' => [ 'required','numeric'],
+            'Peso' => ['required', 'numeric','not_in:0'],
+            'Altura' => [ 'required','numeric','not_in:0'],
             'Edad' =>['required' ],
             'Sexo' =>['required' ],
         ]);
