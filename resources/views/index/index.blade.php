@@ -24,9 +24,9 @@
             <label for="Edad" class="col-form-label" required></label>
               <select name="Edad" class="form-control">
                   <option selected>Edad</option>
-                  <option value="1">1 año</option>
-                  <option value="2">2 años</option>
-                  <option value="3">3 años</option>
+                  <option value="1">1 año de edad</option>
+                  <option value="2">2 años de edad</option>
+                  <option value="3">3 años de edad</option>
               </select>              
           </div>
           

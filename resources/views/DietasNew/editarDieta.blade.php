@@ -1,19 +1,19 @@
 @extends('extenciones.adminGral')
 @section('content')
 
-<div class="container w-75 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>Horario: {{$dieta->name}}</h1></div>
+<div class="container w-75 center" style = "font-family:Brush Script MT,arial,helvética;text-align:center"><h1>{{$dieta->name}}</h1></div>
 <div class="container-md container-inline w-100">
     <table class="table">
     <thead>
         <tr>
         <th scope="col">Tipo</th>
-        <th scope="col">Lunes</th>
-        <th scope="col">Martes</th>
-        <th scope="col">Miercoles</th>
-        <th scope="col">Jueves</th>
-        <th scope="col">Viernes</th>
-        <th scope="col">Sábado</th>
-        <th scope="col">Domingo</th>
+        <th scope="col" style="text-align:center">Lunes</th>
+        <th scope="col" style="text-align:center">Martes</th>
+        <th scope="col" style="text-align:center">Miercoles</th>
+        <th scope="col" style="text-align:center">Jueves</th>
+        <th scope="col" style="text-align:center">Viernes</th>
+        <th scope="col" style="text-align:center">Sábado</th>
+        <th scope="col" style="text-align:center">Domingo</th>
         </tr>
     </thead>
     <tbody>
@@ -348,12 +348,12 @@
 
                     <div class="col-md-2">
                     <br>
-                        <button id="btnSubmit" class="btn btn-dark form-control" type="submit">Filtrar</button>
+                       <button id="btnSubmit" class="btn btn-outline-dark form-control" type="submit">Filtrar</button>
                     </div>
 
                     <div class="col-md-2">
                     <br>
-                        <button type="submit" class="btn btn-outline-danger">Cancelar</button> 
+                    <button type="submit" class="btn btn-outline-danger form-control">Cancelar</button> 
                     </div>  
                 </div>             
             </form>
