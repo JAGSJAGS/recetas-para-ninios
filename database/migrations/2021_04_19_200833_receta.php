@@ -89,7 +89,7 @@ class Receta extends Migration
             "ingredientes" => "ingredientes",
             "ingredientes_alternativos" => "ingredientes_alternativos",
             "pasos"=>"pasos",
-            "ruta_imagen"=>"GalletaQuinoa.jpg",
+            "ruta_imagen"=>"papillaManzana.jpg",
             "tipo"=>"tipo",
             "calorias"=>"calorias"
 
