@@ -60,17 +60,78 @@ class Receta extends Migration
         });
         DB::table("receta")
         ->insert([
-            "nombre" => "nombre",
+            "nombre" => "Galletas de Quinua",
             "edad" => "2",
             "ingredientes" => "ingredientes",
             "ingredientes_alternativos" => "ingredientes_alternativos",
             "pasos"=>"pasos",
-            "ruta_imagen"=>"ruta_imagen",
+            "ruta_imagen"=>"GalletaQuinoa.jpg",
             "tipo"=>"tipo",
             "calorias"=>"calorias"
 
         ]);
-        
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Papilla de Durazno",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"PapillaDurazno.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Papilla de Manzana",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"GalletaQuinoa.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Pankeke de Platano",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"Pankekes.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Pure de Verduras",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"pureDeVerduras.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Gelatina de Pata",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"gelatinaDePata.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
         /**Schema::create('usuario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->string('nombre');
