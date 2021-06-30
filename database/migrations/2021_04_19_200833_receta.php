@@ -132,6 +132,116 @@ class Receta extends Migration
             "calorias"=>"calorias"
 
         ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Pastel de berenjena",
+            "edad" => "3",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"berengena.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Mousse de fresas",
+            "edad" => "1",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"moussefresa.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Tortitas de verduras",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"tortillaVerdura.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Zumo de zanahoria",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"zanahoria.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Zumo de naranja",
+            "edad" => "1",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"naranja.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Zumo de manzana",
+            "edad" => "3",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"manzana.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Croquetas de pollo",
+            "edad" => "3",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"pollo.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Crema de zanahoria",
+            "edad" => "3",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"cremaZanahoria.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+        DB::table("receta")
+        ->insert([
+            "nombre" => "Sopa de calabaza",
+            "edad" => "3",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"sopacalabaza.jpg",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
+
+        ]);
+
+        
         /**Schema::create('usuario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->string('nombre');
