@@ -58,8 +58,19 @@ class Receta extends Migration
             $table->softDeletes();
             $table->timestamps();
         });
-        
+        DB::table("receta")
+        ->insert([
+            "nombre" => "nombre",
+            "edad" => "2",
+            "ingredientes" => "ingredientes",
+            "ingredientes_alternativos" => "ingredientes_alternativos",
+            "pasos"=>"pasos",
+            "ruta_imagen"=>"ruta_imagen",
+            "tipo"=>"tipo",
+            "calorias"=>"calorias"
 
+        ]);
+        
         /**Schema::create('usuario', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->string('nombre');
