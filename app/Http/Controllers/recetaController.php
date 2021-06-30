@@ -66,7 +66,9 @@ class recetaController extends Controller
             'Ingredientes' =>['required', 'max:1000'  ],
             'Edad' =>['required', 'numeric'],
             'IngredientesAlternativos' =>['max:1000'],
-            'Pasos' =>['required', 'max:3000' ]
+            'Pasos' =>['required', 'max:3000' ],
+            'Calorias' =>['required'],
+            'Tipo' =>['required'],
         ]);
 
         $receta = Receta::find($id);
@@ -87,7 +89,9 @@ class recetaController extends Controller
         'edad'=> $request->Edad,
         'ingredientes'=> $request->Ingredientes,
         'ingredientes_alternativos'=> $request->IngredientesAlternativos,
-        'pasos'=> $request->Pasos,   
+        'pasos'=> $request->Pasos, 
+        'calorias'=> $request->Calorias,
+        'tipo'=> $request->Tipo,  
         'ruta_imagen'=> $name]);
         //return view('receta.editarReceta',compact('receta'))->with('mensaje','registroexito');
         return back()->with('mensaje','registroexito');
